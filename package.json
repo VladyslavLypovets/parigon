@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "browserslist": [
+    ">1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp live"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.0.0",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpegoptim": "^6.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "jpegoptim-bin": "^5.0.0",
+    "merge-stream": "^1.0.1",
+    "optipng-bin": "^5.0.0",
+    "path": "^0.12.7",
+    "pngquant-bin": "^5.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.2.1",
+    "owl.carousel": "^2.3.4"
+  }
+}
