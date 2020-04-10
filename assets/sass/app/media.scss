@@ -1,0 +1,128 @@
+@media(min-width: 1500px) {
+  .container {
+    max-width: 1390px;
+  }
+}
+@media (max-width: 1199px){
+  .home-main{
+    padding: 160px 0 200px;
+    h1{
+      font-size: 40px;
+    }
+    .line-elements{
+      .line-left,
+      .line-right{
+        height: 2px;
+        width: 19%;
+      }
+      img{
+        width: 16px;
+        height: 16px;
+      }
+    } 
+    .business-areas{
+      flex-wrap: wrap;
+      .business{
+        width: 51%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-bottom: 50px;
+        border-bottom: 5px solid rgba(255, 255, 255, 0.07);
+        h6{
+          color: #e3b079;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+          margin: 15px 0 11px;
+        }
+        p{
+          text-align: center;
+          padding: 0;
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  header{
+    padding-top: 20px;
+    .logo{
+      img{
+        width: 39px;
+        height: 39px;
+      }
+      p {
+        font-size: 13px;
+        margin-left: 20px;
+      }
+    }
+    .menu{
+      width: 52px;
+      height: 51px;
+      img{
+        width: 60%;
+      }
+    }
+  } 
+}
+
+@media (max-width: 767px){
+  .home-main{
+    padding: 100px 0 120px;
+    h1{
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+    .line-elements{
+      .line-left,
+      .line-right{
+        width: 100%;
+      }
+      img{
+        width: 16px;
+        height: 16px;
+      }
+    } 
+    .business-areas{
+      flex-wrap: wrap;
+      .business{
+        width: 100%;
+        margin-bottom: 35px;
+        
+        h6{
+          margin-bottom: 15px;
+        }
+        img{
+          width: 45px;
+          height: 44px;
+        }
+        p{
+          font-size: 12px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  footer{
+    padding: 16px 0 5px;
+    .copirating{
+      flex-wrap: wrap;
+      p{
+        font-size: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px){
+}
