@@ -1,4 +1,7 @@
 $(document).ready(function() {
-  console.log('ready');
-  $('.owl-carousel').owlCarousel();
+  $(function(){
+    $('.circle-text p').lettering();
+  });
+  
 })
+

@@ -1,0 +1,68 @@
+.home-main{
+  background: url(../img/bg-index.png);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 100px 0;
+  .line-elements{
+    .line-left, .line-right {
+      width: 26%;
+      height: 3px;
+      background-color: #e3b079;
+      display: block;
+    }
+    img{
+      margin: 0 25px;
+    }
+  }
+  h1{
+    color: #ffffff;
+    font-family: "Avenir Next Cyr";
+    font-size: 80px;
+    font-weight: 400;
+    margin: 35px 0 110px;
+    text-align: center;
+    span{
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+  .business-areas{
+    text-decoration: none;
+    .business{
+      width: calc(33% - 14px);
+      border-bottom: 8px solid rgba(255, 255, 255, 0.07);
+      height: 120px;
+      padding-bottom: 20px;
+      transition: all 0.3s;
+      p{
+        padding-left: 19px;
+        color: rgba(255, 255, 255, 0.73);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          left: 2px;
+          top: 7px;
+          width: 6px;
+          height: 6px;
+          background-color: #e2af79;
+          border-radius: 100%;
+        }
+      }
+      &:hover{
+        border-color: #e3b079;
+        padding-bottom: 6px;
+        height: 106px;
+      }
+    }
+  }
+}

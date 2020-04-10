@@ -1,0 +1,18 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.15); 
+  padding: 18px 0 0;
+  p,
+  a{
+    color: rgba(255, 255, 255, 0.23);
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.3s;
+  }
+  a:hover{
+    color: #e3b079;
+  }
+}
