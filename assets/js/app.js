@@ -1,7 +1,3 @@
 $(document).ready(function() {
-  $(function(){
-    $('.circle-text p').lettering();
-  });
-  
+  $('.circle-text p').lettering();
 })
-
