@@ -2,15 +2,7 @@
   background: url(../img/bg-company.jpg);
   min-height: 100vh;
   background-size: cover;
-  padding: 200px 0 0;
-  header{
-    .logo p{
-      color: #24222d;
-    }
-    .languages p {
-      color: #24222d;
-    }
-  }
+  padding: 200px 0 100px;
   h3{
     color: #24222d;
     font-size: 60px;
@@ -236,9 +228,6 @@
       
      
     }
-  }
-  footer{
-    border-top: 1px solid rgba(36, 34, 45, 0.08);
   }
   
   

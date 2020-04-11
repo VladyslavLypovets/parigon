@@ -3,6 +3,24 @@
     max-width: 1390px;
   }
 }
+@media (max-width: 1499px){
+  .company-main{
+    .photo .quote{
+      padding: 10px 30px 10px 15px;
+      i{
+        margin-right: 15px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    .direction h4{
+      &::before{
+        right: 61%;
+      }
+    }
+  } 
+}
 @media (max-width: 1199px){
   .home-main{
     padding: 160px 0 200px;
@@ -52,6 +70,37 @@
       }
     }
   }
+  .company-main{
+    h3{
+      font-size: 43px;
+    }
+    P{
+      font-size: 14px;
+    }
+    .photo{
+      margin-top: 92px;
+      display: flex;
+      justify-content: flex-end;
+      .quote{
+        right: 31px;
+        top: -42px;
+      }
+      img{
+        width: 90%;
+      }
+    }
+    .direction{
+      h4{
+        font-size: 25px;
+        &::before{
+         width: 13%;
+        }
+      }
+      .business .kind .name-business p {
+        font-size: 17px;
+      }
+    } 
+  } 
 }
 
 @media (max-width: 992px){
