@@ -15,4 +15,15 @@ footer{
   a:hover{
     color: #e3b079;
   }
+  &.black {
+    border-top: 1px solid rgba(36, 34, 45, 0.08);
+    p,
+    a{
+      opacity: 0.83;
+      color: #24222d;
+      font-size: 14px;
+      font-weight: 300;
+    }
+ 
+  }
 }

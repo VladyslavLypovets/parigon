@@ -5,6 +5,7 @@ header{
   left: 0;
   width: 100%;
   height: 100px;
+  z-index: 1;
   .logo{
     p{
       color: #ffffff;
@@ -38,6 +39,17 @@ header{
       img{
         transform: scale(1.1);
       }
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &.black {
+    .logo p{
+      color: #24222d;
+    }
+    .languages p {
+      color: #24222d;
     }
   }
 }
