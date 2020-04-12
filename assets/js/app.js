@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $('.circle-text p').lettering();
+  $('.circle-text').lettering();
 })
