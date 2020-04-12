@@ -16,13 +16,17 @@ header{
     }
   }
   .languages{
-    p{
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 400;
-      text-transform: uppercase;
-      margin: 0;
-    }                                
+    .lang-select {
+      background: none;
+      border: none;
+      .current {
+        color: #fff;
+        font-size: 16px;
+      }
+      &:after {
+        border-color: #fff;
+      }
+    }                             
   }
   .menu{
     background-color: rgba(255, 255, 255, 0.05);
