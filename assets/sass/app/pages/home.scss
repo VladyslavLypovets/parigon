@@ -12,9 +12,11 @@
       height: 3px;
       background-color: #e3b079;
       display: block;
+      animation-delay: 1s;
     }
     img{
       margin: 0 25px;
+      animation-delay: 1.25s;
     }
   }
   h1{
@@ -24,6 +26,7 @@
     font-weight: 400;
     margin: 35px 0 110px;
     text-align: center;
+    animation-delay: 1.5s;
     span{
       font-weight: bold;
       font-style: normal;
