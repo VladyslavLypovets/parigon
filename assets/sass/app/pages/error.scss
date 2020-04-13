@@ -4,7 +4,6 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  // position: relative;
   padding: 250px 0;
   header{
     .logo p{
@@ -22,6 +21,7 @@
       width: auto;
       top: -59px;
       right: 35%;
+      z-index: 1;
     }
     img{
       width: 100%;
@@ -39,20 +39,21 @@
     font-size: 24px;
     font-weight: 400;
     margin: 0;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
     a{
+      display: block;
       font-size: 24px;
       font-weight: 400;
       color: #e3b079;
       text-decoration: underline;
       margin: 0;
       transition: all 0.3s;
+      line-height: 0;
       &:hover{
         font-size: 26px;
       }
     }
-  }
-  
-  footer{
-    background-color: #24222d;
   }
 }

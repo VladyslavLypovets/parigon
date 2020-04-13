@@ -1,15 +1,17 @@
+@@include('components/_header.html', {"menuImg": "img/menu-dark.png", "theme": "black animated zoomIn",  "title": "Error"})
 <main class="error-main">
-  @@include('components/_header.html', {"menuImg": "img/menu-dark.png", "title": "Error"})
   <div class="container">
     <div class="d-flex flex-column justify-content-center align-items-center">
       <div class="error-number">
-        <img src="../img/flowers-2.png" alt="" class="flowers">
-        <img src="../img/error-number.png" alt="error-number">
+        <img src="../img/flowers-2.png" alt="" class="flowers animated fadeInDown delay-1-5s">
+        <img src="../img/error-number.png" alt="error-number" class="animated fadeInUp delay-1s">
       </div>
-      <h4>На сайте нет такой страницы!</h4>
-      <h5>Возможно не верная ссылка <a href="/">на главную.</a></h5>
+      <div class="animated fadeInUp delay-2s">
+        <h4>На сайте нет такой страницы!</h4>
+        <h5>Возможно не верная ссылка &nbsp;<a href="/">на главную.</a></h5>
+      </div>
     </div>
     
   </div>
-  @@include('components/_footer.html')
 </main>
+@@include('components/_footer.html', {"theme": "black-bg animated zoomIn"})
