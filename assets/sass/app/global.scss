@@ -7,6 +7,15 @@ body {
   padding: 0;
   font-family: 'Avenir Next Cyr';
   position: relative;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
 }
 
 a {
@@ -20,4 +29,9 @@ a:hover {
 }
 .delay-2-5s {
   animation-delay: 2.5s;
+}
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }

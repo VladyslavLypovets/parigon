@@ -1,0 +1,51 @@
+<div class="dialog-wrap" id="dialogs">
+  <div class="overllay"></div>
+
+  <div class="dialog leave-request-dialog">
+    <button class="btn-zero close close-icon-wrap" onclick="closeDialog()">
+      @@include('cross.html')
+    </button>
+    <form>
+      <h2 class="dialog-title bottom-line">Оставьте заявку</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Ф.И.О.">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" name="phone" placeholder="Телефон">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <!-- <div class="town">
+          <select class="city-select">
+              <option value="Кривой Рог">Кривой Рог</option>
+              <option value="Полтава">Полтава</option>
+              <option value="Харьков">Харьков</option>
+              <option value="Киев">Киев</option>
+          </select>
+        </div> -->
+        <input type="text" class="form-control" name="name" placeholder="Укажите вашу страну">
+      </div>
+      <div class="form-group">
+        <input type="text" name="message" class="form-control" placeholder="Ваше сообщения">
+      </div>
+      <div class="text-center">
+        <button class="btn-gold">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="dialog cocoa-flavor-dialog">
+    <button class="btn-zero close close-icon-wrap" onclick="closeDialog()">
+      @@include('cross.html')
+    </button>
+    <h2 class="dialog-title bottom-line">Аромат какао</h2>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img src="../img/sca.png" alt="sca">
+      <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
+      <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
+    </div>
+  </div>
+
+</div>

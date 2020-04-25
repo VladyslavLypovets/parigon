@@ -1,0 +1,178 @@
+@@include('components/_header.html', {"menuImg": "img/menu-light.png", "theme": "light animated zoomIn", "title": "Товар"})
+<main class="main-tovar">
+  <div class="top-bg">
+    <div class="container">
+      <div class="d-flex justify-content-center justify-content-md-start">
+        <button class="btn-border-gold">В каталог</button> 
+      </div>
+     
+    </div>
+  </div>
+  <div class="info-tovar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-5 photo-tovar">
+          <h4 class="d-block d-md-none">Название товарной позиции </h4>
+          <img src="../img/photo-tovar.png" alt="tovar">
+        </div>
+        <div class="col-12 col-md-6 col-xl-7 col-left">
+          <h4 class="d-none d-md-block">Название товарной позиции </h4>
+          <div class="row">
+            <div class="col-12 col-xl-6 text-tovar">
+              <div class="toggle-text">
+                <div class="toggle-text-inner">
+                  <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
+                </div>
+                <button class="d-block d-md-none show-more"><span class="show">Показать еще</span> <span class="svernut">Свернуть</span></button>
+                
+              </div>
+             <button class="d-block d-md-none btn-black" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
+              <h6>Підходить для всіх способів приготування</h6>
+              <div class="d-flex coffemachine align-items-center">
+                  <img src="../img/coffemachine-1.png" alt="coffemachine">
+                  <img src="../img/coffemachine-2.png" alt="coffemachine">
+                  <img src="../img/coffemachine-3.png" alt="coffemachine">
+                  <img src="../img/coffemachine-4.png" alt="coffemachine">
+                  <img src="../img/coffemachine-5.png" alt="coffemachine">
+              </div>
+              <div class="foasting">
+                <div class="d-flex align-items-center">
+                  <p>4</p>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5>Темне обсмеження</h5>
+              </div>
+              
+            </div>
+            <div class="d-flex d-md-none d-xl-flex col-12 col-xl-6 vkus-sca flex-column align-items-center justify-content-center">
+              <a href="#" onclick="openDialog('cocoa-flavor-dialog')" class="d-flex flex-column align-items-center justify-content-center"> 
+                <h5>Опис смаку по SCA</h5>
+                <img src="../img/sca.png" alt="sca">
+              </a>
+              <div class="d-flex">
+                <div class="question">
+                  <p>?</p>
+                </div>
+                <h6>Що таке <span>CSA?</span></h6>
+              </div>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xl-5">
+          <button class="btn-black d-none d-md-block" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
+        </div>
+        <div class="col-12 d-none d-md-flex d-xl-none vkus-sca-mob">
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex question-csa justify-content-center">
+                <div class="question">
+                  <p>?</p>
+                </div>
+                <h6>Що таке <span>CSA?</span></h6>
+              </div>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+              <a href="#" onclick="openDialog('cocoa-flavor-dialog')">
+                <h5>Опис смаку по SCA</h5>
+                <img src="../img/sca.png" alt="sca">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-7 fasovka">
+          <h6>Фасовка</h6>
+          <div class="d-flex justify-content-between wrap">
+            <div class="d-flex justify-content-between mob-flex">
+              <div class="meshok">
+                <img src="../img/meshok.png" alt="meshok">
+                <p>Мешок 60 кг<br />Advenste</p>
+              </div>
+              <div class="meshok">
+                <img src="../img/meshok.png" alt="meshok">
+                <p>Мешок 60 кг<br />Advenste</p>
+              </div>
+              <div class="meshok">
+                <img src="../img/meshok.png" alt="meshok">
+                <p>Мешок 60 кг<br />Advenste</p>
+              </div>
+            </div>
+            <div class="konteiner d-flex flex-row flex-md-column justify-content-between">
+              <div class="konteiner-inner d-flex align-items-center">
+                <img src="../img/konteiner.png" alt="konteiner">
+                <p>Контейнер<br />12.5 т</p>
+              </div>
+              <div class="konteiner-inner d-flex align-items-center">
+                <img src="../img/konteiner.png" alt="konteiner">
+                <p>Контейнер<br />12.5 т</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="other-varieties">
+        <h4>Другие сорта</h4>
+        <div class="owl-carousel varieties-carousel">
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+          <a href="#" class="varietie">
+            <img src="../img/varietie.png" alt="varietie">
+            <div class="bg-text">
+              <h6>Другой сорт</h6>
+              <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+@@include('components/_footer.html', {"theme": "black-bg animated zoomIn"})

@@ -29,7 +29,6 @@
                     <img src="img/menu-dark.png" alt="menu-layers">
                 </button>
             </div>
-
         </div>
     </div>
 </header>
@@ -45,9 +44,9 @@
             <ul>
               <li><a href="/">Головна</a></li>
               <li><a href="/o-company.html">Про компанію</a></li>
-              <li><a href="#"> Переваги співпраці</a></li>
+              <li><a href="/preimushestvo-rabotu.html"> Переваги співпраці</a></li>
               <li><a href="#">Про продукцію</a></li>
-              <li><a href="#">Контакти</a></li>
+              <li><a href="/contact.html">Контакти</a></li>
             </ul>
             <p>Крім того, венесуельський какао визнаний кращим в<br /> світі завдяки унікальному смаку та аромату!</p>
             <button class="btn-gold"> Напишіть нам</button>
@@ -82,7 +81,7 @@
         <img src="../img/flowers-2.png" alt="" class="flowers animated fadeInDown delay-1-5s">
         <img src="../img/error-number.png" alt="error-number" class="animated fadeInUp delay-1s">
       </div>
-      <div class="animated fadeInUp delay-2s">
+      <div class="animated fadeInUp delay-2s d-flex flex-column align-items-center ">
         <h4>На сайте нет такой страницы!</h4>
         <h5>Возможно не верная ссылка &nbsp;<a href="/">на главную.</a></h5>
       </div>
@@ -99,7 +98,67 @@
     
   </div>
 </footer>
+<div class="dialog-wrap" id="dialogs">
+  <div class="overllay"></div>
 
+  <div class="dialog leave-request-dialog">
+    <button class="btn-zero close close-icon-wrap" onclick="closeDialog()">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="cross" id="cross" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12" viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
+  <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+  c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+  C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+  s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"></path>
+</svg>
+    </button>
+    <form>
+      <h2 class="dialog-title bottom-line">Оставьте заявку</h2>
+      <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Ф.И.О.">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" name="phone" placeholder="Телефон">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="E-mail">
+      </div>
+      <div class="form-group">
+        <!-- <div class="town">
+          <select class="city-select">
+              <option value="Кривой Рог">Кривой Рог</option>
+              <option value="Полтава">Полтава</option>
+              <option value="Харьков">Харьков</option>
+              <option value="Киев">Киев</option>
+          </select>
+        </div> -->
+        <input type="text" class="form-control" name="name" placeholder="Укажите вашу страну">
+      </div>
+      <div class="form-group">
+        <input type="text" name="message" class="form-control" placeholder="Ваше сообщения">
+      </div>
+      <div class="text-center">
+        <button class="btn-gold">Отправить</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="dialog cocoa-flavor-dialog">
+    <button class="btn-zero close close-icon-wrap" onclick="closeDialog()">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="cross" id="cross" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12" height="12" viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
+  <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+  c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+  C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+  s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"></path>
+</svg>
+    </button>
+    <h2 class="dialog-title bottom-line">Аромат какао</h2>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <img src="../img/sca.png" alt="sca">
+      <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
+      <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
+    </div>
+  </div>
+
+</div>
 <script src="js/vendor.min.js"></script>
 <script src="js/menu.min.js"></script>
 <script src="js/app.min.js"></script>

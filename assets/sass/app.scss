@@ -8,13 +8,17 @@
 @import 'app/components/menu';
 @import 'app/pages/o-company';
 @import 'app/pages/error';
+@import 'app/pages/partners';
+@import 'app/pages/info-company';
+@import 'app/pages/tovar';
+@import 'app/pages/preimushestvo-rabotu';
+@import 'app/components/dialogs';
+@import 'app/pages/contact';
+@import 'app/pages/coffe';
+@import 'app/pages/corn';
+@import 'app/pages/kakao';
 
-header{
-  .contacts-header{
-    background: #92c03e;
-    padding: 22px 17px;
-  }
-}
+
 
 @import 'app/media';
 

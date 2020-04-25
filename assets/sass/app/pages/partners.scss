@@ -1,0 +1,126 @@
+.main-partners{
+  min-height: 100vh;
+  .top-title{
+    background: url(../img/bg-parners-top.png);
+    background-size: cover;
+    background-position-x: center;
+    padding: 170px 0 0;
+    h2{
+      opacity: 0.05;
+      color: #ffffff;
+      font-size: 163px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: right;
+      margin: 0 0 -23px 0;
+      line-height: 1;
+    }
+  }
+  .our-partners{
+    padding-bottom: 250px;
+    background: url(../img/bg-partners.png);
+    background-size: cover;
+    .text-info{
+      width: 48%;
+      margin-top: 100px;
+      h3{
+        color: #24222d;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 0 50px;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          bottom: -19px;
+          left: 0;
+          height: 6px;
+          background-color: #e3b079;
+          width: 15%;
+        }
+      }
+      p{
+        color: #24222d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        span{
+          font-weight: 600;
+        }
+      }
+    }
+    .block-partner{
+      width: 48%;
+      margin-top: 300px;
+      h5{
+        color: #ffffff;
+        font-size: 48px;
+        font-weight: 700;
+        margin: 0 0 -11px 35px;
+        text-transform: uppercase;
+      }
+      .fond-img{
+        box-shadow: 0 3px 43px rgba(14, 39, 72, 0.23);
+        background-color: #ffffff;
+        img{
+          width: 100%;
+        }
+      }
+      .info-partner{
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        background-color: #24222d;
+        padding: 23px 20px 10px;
+        max-width: 540px;
+        h6{
+          color: #e3b079;
+          font-size: 17px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 0 0 12px;
+        }
+        p{
+          color: #dfdedd;
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0 0 30px;
+        }
+        .contacts-partner{
+          .contact{
+            i{
+              color: #b8b8ba;
+              font-size: 16px;
+              margin: 0 10px 0 0;
+            }
+            p{
+              opacity: 0.59;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+            }
+            a{
+              opacity: 0.59;
+              color: #ffffff;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+              transition: all 0.3s;
+              &:hover{
+                color: #e3b079;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(3){
+        margin-top: 0;
+      }
+      &:nth-child(2){
+        margin-top: 240px;
+      }
+    }
+  }
+}
+

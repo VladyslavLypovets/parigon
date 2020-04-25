@@ -51,10 +51,10 @@
     }
     .quote{
       position: absolute;
-      top: 0;
+      top: -35px;
       background-color: #ffffff;
       padding: 20px 50px 19px 25px;
-      right: 100%;
+      right: 90%;
       width: 110%;
       transform: translate(40px, -50px);
       z-index: -1;
@@ -181,7 +181,3 @@
   } 
 }
 
-@keyframes rotate {
-  from { transform: translate(-50%, -50%) rotate(0); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}

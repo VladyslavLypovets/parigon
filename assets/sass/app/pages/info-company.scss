@@ -1,0 +1,196 @@
+.info-company-main{
+  min-height: 100vh;
+  .top-bg{
+    background: url(../img/bg-top-infopartner.png);
+    background-size: cover;
+    // height: 320px;
+    height: 35vh;
+    background-position-x: center;
+  }
+  .informaton{
+    background: url(../img/bg-info-company.png);
+    background-size: cover;
+    padding-bottom: 140px;
+    background-position-y: bottom;
+    .text-company{
+      padding-top: 70px;
+      img{
+        float: left;
+        margin-right: 80px;
+        margin-top: -120px;
+        max-width: 50%;
+      }
+      h4{
+        color: #24222d;
+        font-size: 60px;
+        margin: 0 0 80px;
+        font-weight: 500;
+        span {
+          position: relative;
+          &::before{
+            position: absolute;
+            content: '';
+            width: 119px;
+            height: 3px;
+            background-color: #e3b079;
+            left: 0;
+            bottom: -45px;
+          }
+        }
+      }
+      p{
+        color: #24222d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+    }
+    .dostavka{
+      .advantages-dostavka{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 90px;
+        .advantage{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 23%;
+          .bg-advantage{
+            width: 161px;
+            height: 161px;
+            background-color: #24222d;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            img.text {
+              width: 210px;
+              height: 210px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              transition: all 1.2s;
+              z-index: -1;
+              animation-name: rotate;
+              animation-duration: 7s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+            }
+          }
+        }
+      }
+      h4{
+        color: #24222d;
+        font-size: 60px;
+        margin: 50px 0 65px;
+        font-weight: 500;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 119px;
+          height: 3px;
+          background-color: #fff;
+          left: 0;
+          bottom: -35px;
+        }
+      }
+      p{
+        color: #24222d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+    }
+    .consulstva{
+      margin-top: 100px;
+      h4{
+        color: #24222d;
+        font-size: 55px;
+        margin: 0 0 70px;
+        font-weight: 500;
+        position: relative; 
+        &::before{
+          position: absolute;
+          content: '';
+          width: 119px;
+          height: 3px;
+          background-color: #e3b079;
+          left: 0;
+          bottom: -45px;
+        }
+      }
+      p{
+        color: #24222d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+      .photo-consulstva{
+        float: right;
+        max-width: 50%;
+        position: relative;
+        margin-left: 70px;
+        .item{
+          position: relative;
+          padding: 0 25px 20px 0;
+          img.global{
+            width: 100%;
+          }
+          img.shadow{
+            position: absolute;
+            opacity: 0.17;
+            right: 0;
+            bottom: 0;
+            width: 95%;
+          }
+        }
+        .owl-nav{
+          display: block;
+          i{
+            font-size: 20px;
+          }
+          .owl-prev{
+            position: absolute;
+            right: 103px;
+            top: 0;
+            transform: translateY(-50%);
+            width: 37px;
+            height: 59px;
+            background-color: #e3b079;
+            transition: all 0.3s;
+            &:hover{
+              background-color: #fff;
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+          .owl-next{
+            position: absolute;
+            right: 56px;
+            top: 0;
+            transform: translateY(-50%);
+            width: 37px;
+            height: 59px;
+            background-color: #e3b079;
+            transition: all 0.3s;
+            &:hover{
+              background-color: #fff;
+            }
+            &:focus{
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

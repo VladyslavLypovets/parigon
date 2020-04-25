@@ -1,0 +1,123 @@
+@@include('components/_header.html', {"menuImg": "img/menu-light.png", "theme": "black animated zoomIn contact-theme",  "title": "Контакти"})
+<main class="contact-main">
+  <div class="">
+    <div class="d-flex">
+      <div class="map">
+        <div class="container d-flex position-relative map-container">
+          <div class="img-wrap">
+            <img src="../img/contact-map.png" alt="contact-map">
+          </div>
+          <div class="contacts">
+            <h4>Контакти</h4>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div>
+                        <h5>Болгарія</h5>
+                        <h6>Варна, К-н Петко Воєвода, 40</h6>
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div>
+                      <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Татьяна Менеджер 
+                      </p>
+                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div>
+                        <h5>Україна</h5>
+                        <h6>Київ, Е.Сверстюка, 23</h6>
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div>
+                      <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Татьяна Менеджер 
+                      </p>
+                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <div>
+                        <h5>Венесуела</h5>
+                        <h6>Парламар, 4-го Травня, Джумбо<br />Сюидад Коммерсиал, оф.98</h6>
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between flex-wrap">
+                      <div>
+                      <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
+                      </p>
+                      <p>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Татьяна Менеджер 
+                      </p>
+                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</main>
+@@include('components/_footer.html', {"theme": "black animated zoomIn"})
