@@ -26,6 +26,15 @@ header{
       &:after {
         border-color: #fff;
       }
+      li.option{
+        &:hover{
+          background-color: #e3b079;
+          
+        }
+      }
+      li.option.selected.focus{
+        display: none;
+      }
     }                             
   }
   .menu{
@@ -52,8 +61,13 @@ header{
     .logo p{
       color: #24222d;
     }
-    .languages p {
-      color: #24222d;
-    }
+    .languages .lang-select{
+      .current{
+        color: #24222d;
+      }
+      &:after {
+        border-color: #24222d;
+      }
+    } 
   }
 }

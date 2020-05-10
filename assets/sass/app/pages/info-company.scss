@@ -19,12 +19,15 @@
         margin-right: 80px;
         margin-top: -120px;
         max-width: 50%;
+        animation-delay: 0.5s;
+        margin-bottom: 10px;
       }
       h4{
         color: #24222d;
         font-size: 60px;
         margin: 0 0 80px;
         font-weight: 500;
+        animation-delay: 1s;
         span {
           position: relative;
           &::before{
@@ -45,6 +48,9 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
+      .toggle-text{
+        animation-delay: 1.5s;
+      }
     }
     .dostavka{
       .advantages-dostavka{
@@ -57,6 +63,7 @@
           justify-content: center;
           align-items: center;
           width: 23%;
+          animation-delay: 3s;
           .bg-advantage{
             width: 161px;
             height: 161px;
@@ -87,9 +94,10 @@
       h4{
         color: #24222d;
         font-size: 60px;
-        margin: 50px 0 65px;
+        margin: 40px 0 65px;
         font-weight: 500;
         position: relative;
+        animation-delay: 2s;
         &::before{
           position: absolute;
           content: '';
@@ -107,6 +115,9 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
+      .toggle-text{
+        animation-delay: 2.5s;
+      }
     }
     .consulstva{
       margin-top: 100px;
@@ -116,6 +127,7 @@
         margin: 0 0 70px;
         font-weight: 500;
         position: relative; 
+        animation-delay: 4s;
         &::before{
           position: absolute;
           content: '';
@@ -133,11 +145,15 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
+      .toggle-text{
+        animation-delay: 4.5s;
+      }
       .photo-consulstva{
         float: right;
         max-width: 50%;
         position: relative;
         margin-left: 70px;
+        animation-delay: 3.5s;
         .item{
           position: relative;
           padding: 0 25px 20px 0;

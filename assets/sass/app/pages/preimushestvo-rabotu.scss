@@ -22,6 +22,7 @@
         font-weight: 500;
         margin: 0 0 80px;
         position: relative;
+        animation-delay: 0.5s;
         span{
           font-weight: 600;
         }
@@ -41,6 +42,9 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 25px;
+      }
+      .toggle-text{
+        animation-delay: 1s;
       }
     }
     .location{
@@ -52,6 +56,7 @@
         font-weight: 500;
         margin: 0 0 70px;
         position: relative;
+        animation-delay: 1.5s;
         span{
           font-weight: 600;
         }
@@ -72,9 +77,13 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
+      .toggle-text{
+        animation-delay: 2s;
+      }
       .download{
         .catalog{
           width: 30%;
+          animation-delay: 2.5s;
           .file{
             width: 100%;
             height: 92px;
@@ -111,6 +120,10 @@
         font-size: 18px;
         font-weight: 500;
         margin: 55px 0 0;
+        animation-delay: 3s;
+      }
+      img.map{
+        animation-delay: 3.5s;
       }
     }
     .logistika{
@@ -123,6 +136,7 @@
         font-weight: 500;
         margin: 0 0 75px;
         position: relative;
+        animation-delay: 4s;
         span{
           font-weight: 600;
         }
@@ -144,10 +158,14 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
+      .toggle-text{
+        animation-delay: 4.5s;
+      }
       img{
         margin-top: 30px;
         width: 32%;
         transition: all 0.3s;
+        animation-delay: 5s;
         &:hover{
           transform: scale(1.05);
         }
@@ -158,6 +176,7 @@
       margin-top: 100px;
       img{
         width: 100%;
+        animation-delay: 5.5s;
       }
       h4{
         color: #24222d;
@@ -166,6 +185,7 @@
         font-weight: 500;
         margin: 0 0 70px;
         position: relative;
+        animation-delay: 6s;
         &::before{
           position: absolute;
           width: 119px;
@@ -182,10 +202,12 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 25px;
+        animation-delay: 6.5s;
       }
       img.animaziya{
         width: 100%;
         margin-top: -39px;
+        animation-delay: 7s;
       }
     }
   }

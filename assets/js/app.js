@@ -16,6 +16,17 @@ $(document).ready(function() {
     autoplayTimeout: 3000,
     margin: 5,
   });
+  if(window.innerWidth <= 767) {
+    $('.category .catalog-carousel').owlCarousel({
+      nav: true,
+      navText: [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+      ],
+      items: 1,
+      margin: 10,
+    });
+  }
 
   $('.other-varieties .varieties-carousel').owlCarousel({
     loop: true,

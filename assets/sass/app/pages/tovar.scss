@@ -12,9 +12,10 @@
       font-size: 16px;
       font-weight: 400;
       background: none;
-      margin-top: 16vw;
-      margin-bottom: 9vw;
+      margin-top: 170px;
+      margin-bottom: 85px;
       transition: all 0.3s;
+      animation-delay: 0.5s;
       &:hover{
         background-color: #fff;
       }
@@ -31,6 +32,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        animation-delay: 1s;
       }
       
     }
@@ -41,6 +43,7 @@
         font-size: 36px;
         font-weight: 400;
         margin-bottom: 70px;
+        animation-delay: 1.5s;
       }
       .text-tovar{
         border-right: 2px solid rgba(37, 34, 43, 0.15);
@@ -50,13 +53,18 @@
           font-weight: 400;
           margin: 0 0 55px;
         }
+        .toggle-text{
+          animation-delay: 2s;
+        }
         h6{
           color: #24222d;
           font-size: 18px;
           font-weight: 500;
           margin-bottom: 25px;
+          animation-delay: 2.5s;
         }
         .coffemachine{
+          animation-delay: 3s;
           img{
             margin-right: 30px;
           }
@@ -69,6 +77,7 @@
             font-weight: 700;
             text-transform: uppercase;
             margin: 0 15px 0 0;
+            animation-delay: 3.5s;
           }
           span{
             width: 10px;
@@ -76,6 +85,7 @@
             background-color: #b18c65;
             border-radius: 100%;
             margin: 0 10px 0 0;
+            animation-delay: 4s;
             &:last-child{
               background-color: #d0d0d0;
             }
@@ -86,6 +96,7 @@
             font-weight: 300;
             text-transform: uppercase;
             margin: 15px 0 0;
+            animation-delay: 4.5s;
           }
         }
       }
@@ -96,9 +107,11 @@
           font-size: 18px;
           font-weight: 400;
           margin: 35px 0 23px;
+          animation-delay: 5s;
         }
         img{
           margin-bottom: 40px;
+          animation-delay: 5.5s;
         }
         .question{
           width: 19px;
@@ -108,6 +121,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          animation-delay: 5.5s;
           p{
             color: #ffffff;
             font-size: 16px;
@@ -120,6 +134,7 @@
           font-size: 18px;
           font-weight: 400;
           margin: 0;
+          animation-delay: 5.5s;
           span{
             color: #b18c65;
           }
@@ -130,6 +145,7 @@
           font-weight: 400;
           line-height: 24px;
           margin: 15px 0 0;
+          animation-delay: 6s;
         }
       }
     }
@@ -142,6 +158,7 @@
         margin-bottom: 30px;
         position: relative;
         overflow: hidden;
+        animation-delay: 7s;
         &::after{
           position: absolute;
           content: '';
@@ -154,6 +171,7 @@
       }
       .meshok{
         margin-right: 55px;
+        animation-delay: 7.5s;
         img{
           margin-bottom: 23px;
           transition: all 0.3s;
@@ -172,6 +190,7 @@
       .konteiner{
         margin-left: 40px;
         .konteiner-inner{
+          animation-delay: 8s;
           img{
             margin-right: 30px;
             transition: all 0.3s;
@@ -199,6 +218,7 @@
       font-size: 16px;
       font-weight: 400;
       transition: all 0.3s;
+      animation-delay: 6.5s;
       i{
         color: #e3b079;
         margin-right: 15px;
@@ -219,9 +239,11 @@
         font-size: 36px;
         font-weight: 500;
         margin-bottom: 30px;
+        animation-delay: 8.5s;
       }
       .varieties-carousel{
         position: relative;
+        animation-delay: 9s;
         .varietie{
           img{
             width: 100%;
