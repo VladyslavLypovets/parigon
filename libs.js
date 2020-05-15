@@ -18,5 +18,6 @@ module.exports = {
     'node_modules/owl.carousel/dist/owl.carousel.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
     'node_modules/jquery-nice-select/js/jquery.nice-select.min.js',
+    'node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js',
   ],
 };

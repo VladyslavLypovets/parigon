@@ -1,4 +1,21 @@
 $(document).ready(function() {
+  
+  function isMobile() {
+    return window.innerWidth <= 767
+  }
+
+  if (!isMobile()) {
+    $(".nicescroll").niceScroll({
+      cursorcolor: "#b9b9b9",
+      cursorwidth: "4px",
+      cursoropacitymin: 1
+    });
+    $('.dialog').niceScroll({
+      cursorcolor: "#b9b9b9",
+      cursorwidth: "4px",
+      cursoropacitymin: 1
+    });
+  }
 
     $('.nice-select').niceSelect();
 
