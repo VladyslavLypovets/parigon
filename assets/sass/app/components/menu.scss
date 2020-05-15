@@ -20,6 +20,38 @@
     width: 100%;
     overflow: hidden;
     padding: 100px 0;
+    .zerno {
+      position: absolute;
+      z-index: 100;
+      pointer-events: none;
+      @media(max-width: 1199px) {
+        display: none;
+      }
+      &:nth-child(1) {
+        top: 35%;
+        left: 85%;
+      }
+      &:nth-child(2) {
+        top: 27%;
+        left: 42%;
+      }
+      &:nth-child(3) {
+        top: 25%;
+        left: 50%;
+      }
+      &:nth-child(4) {
+        right: 50%;
+        bottom: 35%;
+      }
+      &:nth-child(5) {
+        right: 87%;
+        bottom: 20%;
+      }
+      &:nth-child(6) {
+        right: 10%;
+        bottom: 85%;
+      }
+    }
   }
   .triangle{
     position: absolute;
@@ -34,22 +66,6 @@
     &.open {
       border-bottom: 100vh solid #24222d;
     }
-  }
-  .corn-menu-left{
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: all 0.7s;
-    transform: translateX(-140%) translateY(-50px);
-  }
-  .corn-menu-right{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: all 0.7s;
-    transform: translateX(120%) translateY(50px);
   }
   .close-menu{
     position: absolute;

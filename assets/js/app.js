@@ -149,5 +149,27 @@ $(document).ready(function() {
             $('.tab-pane[data-tab-content=' + tab_number + ']').addClass('show');
             $('.tab-pane[data-tab-content=' + tab_number + ']').addClass('animation');
         }, 300);
-    })
+    });
+
+    var mouseX = 0, mouseY = 0, limitX = 120, limitY = 120;
+
+    $(".zerno").each(function(){
+        var layer = $(this);
+        var def = layer.data("offset");
+      
+        $(window).mousemove(function(e){
+          var offset = layer.offset();
+           mouseX = Math.min(e.pageX - offset.left, limitX);
+           mouseY = Math.min(e.pageY - offset.top, limitY);
+        });
+      
+        var xp = 0, yp = 0;
+        var loop = setInterval(function(){
+            console.log(layer)
+          xp += (mouseX - xp) / 12 * def;
+          yp += (mouseY - yp) / 12 * def;
+          console.log(xp, yp)
+          layer.css({'transform': 'translate('+xp+'px, '+yp+'px)'});
+        }, 30); 
+      });
 })
