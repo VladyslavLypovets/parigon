@@ -120,7 +120,6 @@ $(document).ready(function() {
             $('.tile-btn-text').addClass('d-none');
             $('.toggle-animation').removeClass('open');
             setTimeout(function() {
-                console.log($('.catalog-main').height());
                 $('.tile-wrap').addClass('d-none');
                 $('.toggle-animation').addClass('open');
                 $('.pills-wrap').removeClass('d-none');
@@ -165,10 +164,8 @@ $(document).ready(function() {
       
         var xp = 0, yp = 0;
         var loop = setInterval(function(){
-            console.log(layer)
           xp += (mouseX - xp) / 12 * def;
           yp += (mouseY - yp) / 12 * def;
-          console.log(xp, yp)
           layer.css({'transform': 'translate('+xp+'px, '+yp+'px)'});
         }, 30); 
       });
