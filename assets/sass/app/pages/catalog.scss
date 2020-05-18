@@ -84,6 +84,7 @@
             }
             .toggle-animation {
                 overflow: hidden;
+                max-width: 100%;
                 @media(min-width: 1199px) {
                     opacity: 0;
                     transition: all 0.5s;

@@ -495,16 +495,21 @@
       .map-container {
         flex-direction: column;
         .img-wrap {
+          animation-delay: 1s;
           order: 2;
           min-height: 700px;
           width: 100%;
-          img{
+          .animation{
             width: 100vw;
             right: 50%;
             transform: translateX(50%);
+            #lottie {
+              max-height: unset;
+            }
           }
         }
         .contacts {
+          animation-delay: 0.5s;
           width: 100%;
           padding: 60px 0 0;
           &:before {
@@ -793,7 +798,7 @@
         .btn-border-black {
           display: none;
         }
-        .category{
+        .toggle-animation .category{
           .forastero,
           .corienta{
             width: 180px;
@@ -992,6 +997,11 @@
   }
   .contact-main .map {
     padding-top: 65px;
+    .map-container {
+      .img-wrap {
+        min-height: 60vw;
+      }
+    }
   } 
   .corn-main .info-corn{
     .parigon-corn{
@@ -1179,7 +1189,7 @@
       .tab-content .tab-pane p {
         font-size: 15px;
       }
-      .name-tabs .category{
+      .name-tabs .toggle-animation .category{
         .nav-link{
           .kind-catalog{
             img{
@@ -1255,7 +1265,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        height: calc(50% - 8vh);
+        height: calc(50% - 6vh);
         background: #24222d;
         content: '';
       }
@@ -1264,7 +1274,7 @@
         transform: translateY(50%);
         transition: all 0s;
         &.open {
-          border-bottom: 16vh solid #24222d;
+          border-bottom: 12vh solid #24222d;
         }
       }
     }
@@ -1736,6 +1746,9 @@
       }
     }
   }
+  .contact-main .map .map-container .img-wrap {
+    min-height: 400px;
+  }
   .contact-main .map .map-container .contacts{
     h4 {
       font-size: 25px;
@@ -2118,6 +2131,9 @@
       }
     }
     .catalog-tabs{
+      .column-left {
+        width: 100%;
+      }
       .tab-content{
         width: 100%;
         .tab-pane{
