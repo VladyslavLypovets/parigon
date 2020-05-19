@@ -1,21 +1,21 @@
 $(document).ready(function() {
   
-  function isMobile() {
-    return window.innerWidth <= 767
-  }
+    function isMobile() {
+        return window.innerWidth <= 767
+    }
 
-  if (!isMobile()) {
-    $(".nicescroll").niceScroll({
-      cursorcolor: "#b9b9b9",
-      cursorwidth: "4px",
-      cursoropacitymin: 1
-    });
-    $('.dialog').niceScroll({
-      cursorcolor: "#b9b9b9",
-      cursorwidth: "4px",
-      cursoropacitymin: 1
-    });
-  }
+    if (!isMobile()) {
+        $(".nicescroll").niceScroll({
+        cursorcolor: "#b9b9b9",
+        cursorwidth: "4px",
+        cursoropacitymin: 1
+        });
+        $('.dialog').niceScroll({
+        cursorcolor: "#b9b9b9",
+        cursorwidth: "4px",
+        cursoropacitymin: 1
+        });
+    }
 
     $('.nice-select').niceSelect();
 
@@ -155,18 +155,24 @@ $(document).ready(function() {
     $(".zerno").each(function(){
         var layer = $(this);
         var def = layer.data("offset");
-      
+        
         $(window).mousemove(function(e){
-          var offset = layer.offset();
-           mouseX = Math.min(e.pageX - offset.left, limitX);
-           mouseY = Math.min(e.pageY - offset.top, limitY);
+            var offset = layer.offset();
+            mouseX = Math.min(e.pageX - offset.left, limitX);
+            mouseY = Math.min(e.pageY - offset.top, limitY);
         });
-      
+        
         var xp = 0, yp = 0;
         var loop = setInterval(function(){
-          xp += (mouseX - xp) / 12 * def;
-          yp += (mouseY - yp) / 12 * def;
-          layer.css({'transform': 'translate('+xp+'px, '+yp+'px)'});
+            xp += (mouseX - xp) / 12 * def;
+            yp += (mouseY - yp) / 12 * def;
+            layer.css({'transform': 'translate('+xp+'px, '+yp+'px)'});
         }, 30); 
-      });
+    });
+    if (window.innerWidth <= 1199) {
+        $('.contact-main #lottie svg').attr('viewBox', '250 150 900 740');
+    }
+    if (window.innerWidth <= 500) {
+        $('.contact-main #lottie svg').attr('viewBox', '250 100 900 740');
+    }
 })

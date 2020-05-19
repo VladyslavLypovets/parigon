@@ -30,8 +30,8 @@
                     </select>
                     </div>
                     <button class="menu">
-                    <img src="img/menu-dark.png" alt="menu-layers">
-                </button>
+                        <img src="img/menu-dark.png" alt="menu-layers">
+                    </button>
                 </div>
             </div>
         </div>
@@ -45,9 +45,11 @@
           <p class="close-text">закрити</p>
           <button class="btn-gold-close"><img src="img/close-button.png" alt="close-button"></button>
         </div>
-        <div class="col-12 col-md-6 h-md-100">
+        <div class="col-12 col-md-6 h-md-100 mb-4 mb-md-0">
           <nav class="menu-left">
-            <img src="../img/menu-corn-top.png" alt="">
+            <div class="d-block d-xl-none">
+              <img src="../img/menu-corn-top.png" alt="menu-corn-top">
+            </div>
             <h4>Меню</h4>
             <ul>
               <li><a href="/">Головна</a></li>
@@ -57,7 +59,7 @@
               <li><a href="/contact.html">Контакти</a></li>
             </ul>
             <p>Крім того, венесуельський какао визнаний кращим в<br /> світі завдяки унікальному смаку та аромату!</p>
-            <button class="btn-gold"> Напишіть нам</button>
+            <button class="btn-gold" onclick="openDialog('leave-request-dialog')"> Напишіть нам</button>
           </nav>
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-center align-items-md-end justify-content-md-end">
@@ -68,6 +70,9 @@
               <li><a href="/kakao.html">Експорт какао</a></li>
               <li><a href="/corn.html">Експорт зернових</a></li>
             </ul>
+            <div class="d-block d-xl-none">
+              <img src="../img/menu-corn-bottom.png" alt="menu-corn-bottom">
+            </div>
           </nav>
         </div>
       </div>
@@ -144,11 +149,11 @@
             </div>
             <div class="name-tabs nav flex-column nav-pills animated fadeInRight" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <button class="btn-border-black view-toggle">
-                  <span class="pills-btn-text d-none">Показать плиткой</span>
-                  <span class="tile-btn-text">Обычный вид</span>
+                  <span class="pills-btn-text">Показать плиткой</span>
+                  <span class="tile-btn-text d-none">Обычный вид</span>
                 </button>
                 <div class="toggle-animation open">
-                    <div class="category pills-wrap d-none">
+                    <div class="category pills-wrap">
                         <div class="forastero">
                             <h6>Форастеро</h6>
                         </div>
@@ -214,7 +219,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="tile-wrap">
+                    <div class="tile-wrap d-none">
                         <div class="move-top">
                             <ul class="data-list">
                                 <li class="item" style="background-image: url(../img/catalog/forastero.png)" data-tab-control="1">

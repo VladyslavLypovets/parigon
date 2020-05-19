@@ -139,13 +139,21 @@
 
 @media (max-width: 1199px){
   .main-menu .bg {
-    padding: 150px 0;
+    padding: 180px 0;
     .menu-left{
       position: relative;
       img{
         position: absolute;
-        top: -100px;
+        top: -150px;
         left: -20px;
+      }
+    }
+    .menu-right{
+      position: relative;
+      img{
+        position: absolute;
+        bottom: -150px;
+        right: -20px;
       }
     }
   }
@@ -503,16 +511,21 @@
       .map-container {
         flex-direction: column;
         .img-wrap {
+          animation-delay: 1s;
           order: 2;
           min-height: 700px;
           width: 100%;
-          img{
+          .animation{
             width: 100vw;
             right: 50%;
             transform: translateX(50%);
+            #lottie {
+              max-height: unset;
+            }
           }
         }
         .contacts {
+          animation-delay: 0.5s;
           width: 100%;
           padding: 60px 0 0;
           &:before {
@@ -801,7 +814,7 @@
         .btn-border-black {
           display: none;
         }
-        .category{
+        .toggle-animation .category{
           .forastero,
           .corienta{
             width: 180px;
@@ -1000,6 +1013,11 @@
   }
   .contact-main .map {
     padding-top: 65px;
+    .map-container {
+      .img-wrap {
+        min-height: 60vw;
+      }
+    }
   } 
   .corn-main .info-corn{
     .parigon-corn{
@@ -1187,7 +1205,7 @@
       .tab-content .tab-pane p {
         font-size: 15px;
       }
-      .name-tabs .category{
+      .name-tabs .toggle-animation .category{
         .nav-link{
           .kind-catalog{
             img{
@@ -1247,14 +1265,29 @@
     }
   }
   .main-menu{
+    .bg{
+      padding: 130px 0;
+      .menu-left img {
+        top: -120px;
+        left: -2px;
+      }
+      .menu-right img {
+        bottom: -50px;
+        right: -30px;
+      }
+    }
     .close-menu{
       right: 20px;
-      top: -75px;
+      top: -100px;
       flex-direction: row;
       transform: unset;
       justify-content: flex-end;
       .close-text {
-        margin: 0 30px 0 0;
+        margin: 0 15px 0 0;
+      }
+      .btn-gold-close {
+        width: 36px;
+        height: 36px;
       }
     }
     .bg{
@@ -1263,7 +1296,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        height: calc(50% - 8vh);
+        height: calc(50% - 6vh);
         background: #24222d;
         content: '';
       }
@@ -1272,7 +1305,7 @@
         transform: translateY(50%);
         transition: all 0s;
         &.open {
-          border-bottom: 16vh solid #24222d;
+          border-bottom: 12vh solid #24222d;
         }
       }
     }
@@ -1744,6 +1777,9 @@
       }
     }
   }
+  .contact-main .map .map-container .img-wrap {
+    min-height: 400px;
+  }
   .contact-main .map .map-container .contacts{
     h4 {
       font-size: 25px;
@@ -2126,6 +2162,9 @@
       }
     }
     .catalog-tabs{
+      .column-left {
+        width: 100%;
+      }
       .tab-content{
         width: 100%;
         .tab-pane{
