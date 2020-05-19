@@ -139,7 +139,15 @@
 
 @media (max-width: 1199px){
   .main-menu .bg {
-    padding: 100px 0;
+    padding: 150px 0;
+    .menu-left{
+      position: relative;
+      img{
+        position: absolute;
+        top: -100px;
+        left: -20px;
+      }
+    }
   }
   .home-main{
     padding: 160px 0 200px;
