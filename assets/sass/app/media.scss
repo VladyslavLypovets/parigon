@@ -189,10 +189,8 @@
           height: unset;
         }
         h6{
-          color: #e3b079;
+          text-align: center;
           font-size: 16px;
-          font-weight: 500;
-          text-transform: uppercase;
           margin: 15px 0 11px;
         }
         p{
@@ -1837,6 +1835,10 @@
           .link-text{
             padding-left: 62px;
             animation-delay: 1.5s;
+            span{
+              border: 1px solid #b1a363;
+              padding: 7px;
+            }
             &::before {
               width: 42px;
             }
@@ -1867,6 +1869,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 4s;
+            span{
+              border: 1px solid #b1a363;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -1895,6 +1901,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 6.5s;
+            span{
+              border: 1px solid #b1a363;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -1951,6 +1961,10 @@
           .link-text{
             padding-left: 62px;
             animation-delay: 1.5s;
+            span{
+              border: 1px solid #8e605d;
+              padding: 7px;
+            }
             &::before {
               width: 42px;
             }
@@ -1981,6 +1995,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 4s;
+            span{
+              border: 1px solid #8e605d;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -2009,6 +2027,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 6.5s;
+            span{
+              border: 1px solid #8e605d;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -2065,6 +2087,10 @@
           .link-text{
             padding-left: 62px;
             animation-delay: 1.5s;
+            span{
+              border: 1px solid #26222c;
+              padding: 7px;
+            }
             &::before {
               width: 42px;
             }
@@ -2095,6 +2121,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 4s;
+            span{
+              border: 1px solid #26222c;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -2123,6 +2153,10 @@
             display: block;
             transition: all .3s;
             animation-delay: 6.5s;
+            span{
+              border: 1px solid #26222c;
+              padding: 7px;
+            }
             &:before {
               position: absolute;
               content: '';
@@ -2178,6 +2212,8 @@
           .btn-gold{
             width: 100%;
             margin: 30px 0 55px;
+            display: block;
+            text-align: center;
           }
         }
       }

@@ -37,11 +37,24 @@
     .business{
       width: calc(33% - 14px);
       border-bottom: 8px solid rgba(255, 255, 255, 0.07);
-      height: 120px;
-      padding-bottom: 20px;
+      height: 130px;
+      padding-bottom: 25px;
       transition: all 0.3s;
+      display: flex;
+      margin-bottom: 50px;
+      img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      h6{
+        color: #e3b079;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin:0 0 10px;
+      }
       p{
-        padding-left: 19px;
         color: rgba(255, 255, 255, 0.73);
         font-size: 16px;
         font-weight: 400;
@@ -49,22 +62,13 @@
         margin: 0;
         height: 100%;
         overflow: hidden;
-        position: relative;
-        &::before{
-          position: absolute;
-          content: '';
-          left: 2px;
-          top: 7px;
-          width: 6px;
-          height: 6px;
-          background-color: #e2af79;
-          border-radius: 100%;
-        }
+        
       }
       &:hover{
         border-color: #e3b079;
         padding-bottom: 6px;
-        height: 106px;
+        height: 110px;
+        margin-bottom: 69px;
       }
     }
   }

@@ -37,6 +37,10 @@
           display: block;
           transition: all 0.3s;
           animation-delay: 1s;
+          span{
+            border: 2px solid #8e605d;
+            padding: 10px;
+          }
           &::before{
             position: absolute;
             content: '';
@@ -98,6 +102,10 @@
           display: block;
           transition: all 0.3s;
           animation-delay: 3s;
+          span{
+            border: 2px solid #8e605d;
+            padding: 10px;
+          }
           &::before{
             position: absolute;
             content: '';
@@ -225,6 +233,10 @@
           display: block;
           transition: all 0.3s;
           animation-delay: 5.5s;
+          span{
+            border: 2px solid #8e605d;
+            padding: 10px;
+          }
           &::before{
             position: absolute;
             content: '';

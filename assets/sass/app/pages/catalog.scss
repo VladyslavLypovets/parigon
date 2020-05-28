@@ -53,8 +53,7 @@
                     .btn-gold {
                         border: none;
                         background-color: #e3b079;
-                        width: 211px;
-                        height: 51px;
+                        padding: 15px 70px;
                         font-size: 16px;
                         color: #ffffff;
                         transition: all 0.3s;
@@ -172,7 +171,7 @@
                             overflow-y: hidden;
                             display: flex;
                             flex-wrap: wrap;
-                            animation: marquee 10s infinite linear;
+                            animation: marquee 20s infinite linear;
                             margin-bottom: 0;
                             .item {
                                 position: relative;
@@ -229,7 +228,7 @@
                     }
                     .move-bottom {
                         .data-list {
-                            animation: marquee-bottom 10s infinite linear;
+                            animation: marquee-bottom 20s infinite linear;
                             .item {
                                 .item-inner {
                                     background: rgba(159, 158, 163, 0.7);
@@ -247,18 +246,20 @@
     }
     .catalog-carousel {
         display: block;
+        max-height: 414px;
     }
 }
 
 
+
      
-.marquee span {
-    color:#212121;
-    font-size:25px;
-    display:inline-block;
-    padding-left:100%;
-    animation: marquee 10s infinite linear;
-}
+// .marquee span {
+//     color:#212121;
+//     font-size:25px;
+//     display:inline-block;
+//     padding-left:100%;
+//     animation: marquee 10s infinite linear;
+// }
 
 @keyframes marquee{
     0%{transform: translate(0, 0);}

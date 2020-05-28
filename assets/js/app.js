@@ -4,6 +4,11 @@ $(document).ready(function() {
         return window.innerWidth <= 767
     }
 
+    if (window.innerWidth <= 1199) {
+        $('.pills-wrap').removeClass('d-none');
+        $('.tile-wrap').addClass('d-none');
+    }
+
     if (!isMobile()) {
         $(".nicescroll").niceScroll({
         cursorcolor: "#b9b9b9",
@@ -42,6 +47,12 @@ $(document).ready(function() {
             ],
             items: 1,
             margin: 10,
+        });
+    } else { 
+        $(".catalog-carousel").niceScroll({
+            cursorcolor: "#b9b9b9",
+            cursorwidth: "4px",
+            cursoropacitymin: 1
         });
     }
 
