@@ -138,6 +138,9 @@
 }
 
 @media (max-width: 1199px){
+  .wow{
+    animation-delay: 1s !important;
+  }
   .main-menu .bg {
     padding: 180px 0;
     .menu-left{
@@ -308,11 +311,15 @@
       }
       .dostavka{
         h4{
+          animation-delay: 2s;
           margin: 40px 0 50px;
           font-size: 32px;
           &::before{
             bottom: -25px;
           }
+        }
+        .toggle-text {
+          animation-delay: 2.5s;
         }
         .advantages-dostavka .advantage .bg-advantage{
           width: 120px;
@@ -424,12 +431,16 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          animation-delay: 7.5s;
           img{
             max-width: 126px;
           }
         }
       }
     } 
+    .konteiner-inner {
+      animation-delay: 8s;
+    }
     .other-varieties h4 {
       font-size: 25px;
     }
@@ -575,7 +586,7 @@
           margin-top: 23px;
           h4 {
             font-size: 40px;
-            margin-bottom: 35px;
+            margin-bottom: 15px;
           }
           .link-text {
             font-size: 14px;
@@ -648,12 +659,13 @@
     .info-coffe{
       
       .parigon-coffe{
-        margin-top: -25px;
+        margin-top: -10px;
         .title-coffe{
           margin-top: 23px;
           h4 {
             font-size: 40px;
-            margin-bottom: 35px;
+            margin-bottom: 15px;
+            padding-top: 29px;
           }
           .link-text {
             font-size: 14px;
@@ -730,10 +742,13 @@
           margin-top: 23px;
           h4 {
             font-size: 40px;
-            margin-bottom: 35px;
+            margin-bottom: 15px;
           }
           .link-text {
             font-size: 14px;
+            span{
+              padding: 5px;
+            }
           }
         } 
       } 
@@ -752,6 +767,9 @@
           }
           .link-text {
             font-size: 14px;
+            span{
+              padding: 5px;
+            }
           }
         } 
         .photo-stages .stages-wrap{
@@ -1086,6 +1104,7 @@
       .title-coffe{
         h4 {
           font-size: 32px;
+          padding: 0;
         }
         .link-text{
           padding-left: 102px;
@@ -1230,6 +1249,9 @@
 }
 
 @media (max-width: 767px){
+  .wow{
+    animation-delay: 1s !important;
+  }
   .home-main{
     padding: 100px 0 120px;
     h1{

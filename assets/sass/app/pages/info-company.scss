@@ -63,7 +63,6 @@
           justify-content: center;
           align-items: center;
           width: 23%;
-          animation-delay: 3s;
           .bg-advantage{
             width: 161px;
             height: 161px;
@@ -97,7 +96,6 @@
         margin: 40px 0 65px;
         font-weight: 500;
         position: relative;
-        animation-delay: 2s;
         &::before{
           position: absolute;
           content: '';
@@ -114,9 +112,6 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 25px;
-      }
-      .toggle-text{
-        animation-delay: 2.5s;
       }
     }
     .consulstva{
@@ -145,15 +140,11 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
-      .toggle-text{
-        animation-delay: 4.5s;
-      }
       .photo-consulstva{
         float: right;
         max-width: 50%;
         position: relative;
         margin-left: 70px;
-        animation-delay: 3.5s;
         .item{
           position: relative;
           padding: 0 25px 20px 0;

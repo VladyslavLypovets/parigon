@@ -22,7 +22,7 @@
           color: #24222d;
           font-size: 60px;
           font-weight: 400;
-          margin-bottom: 44px;
+          margin-bottom: 34px;
           animation-delay: 0.5s;
           span{
             font-weight: 600;
@@ -34,12 +34,13 @@
           font-weight: 500;
           position: relative;
           padding-left: 188px;
-          display: block;
+          display: flex;
           transition: all 0.3s;
           animation-delay: 1s;
           span{
             border: 2px solid #b1a363;
             padding: 10px;
+            display: block;
           }
           &::before{
             position: absolute;
@@ -88,7 +89,6 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
-          animation-delay: 2.5s;
           span{
             font-weight: 600;
           }
@@ -101,7 +101,6 @@
           padding-left: 188px;
           display: block;
           transition: all 0.3s;
-          animation-delay: 3s;
           span{
             border: 2px solid #b1a363;
             padding: 10px;
@@ -139,7 +138,6 @@
           margin-bottom: 85px;
           position: relative;
           z-index: 1;
-          animation-delay: 4s;
           .bg-stages{
             width: 161px;
             height: 161px;
@@ -175,7 +173,6 @@
           top: 32%;
           left: 50%;
           transform: translate(-50%, -50%);
-          animation-delay: 3.5s;
         }
       }
     }
@@ -185,7 +182,6 @@
         width: 54%;
         img{
           width: 100%;
-          animation-delay: 6s;
         }
       }
       .text-benefits{
@@ -197,7 +193,6 @@
           font-weight: 500;
           margin-bottom: 70px;
           position: relative;
-          animation-delay: 4.5s;
           &::before{
             position: absolute;
             content: '';
@@ -213,7 +208,7 @@
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
-          animation-delay: 5s;
+          
           span{
             font-weight: 600;
           }
@@ -226,7 +221,6 @@
           padding-left: 188px;
           display: block;
           transition: all 0.3s;
-          animation-delay: 5.5s;
           span{
             border: 2px solid #b1a363;
             padding: 10px;
