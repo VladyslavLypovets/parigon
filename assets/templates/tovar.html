@@ -1,9 +1,9 @@
-@@include('components/_header.html', {"menuImg": "img/menu-light.png", "theme": "light animated zoomIn", "title": "Товар"})
+@@include('components/_header.html', {"menuImg": "img/menu-light.png", "theme": "light wow zoomIn", "title": "Товар"})
 <main class="main-tovar">
   <div class="top-bg">
     <div class="container">
       <div class="d-flex justify-content-center justify-content-md-start">
-        <button class="btn-border-gold animated fadeIn">В каталог</button> 
+        <button class="btn-border-gold wow fadeIn" onclick="goToPage('catalog.html')">В каталог</button> 
       </div>
     </div>
   </div>
@@ -11,23 +11,23 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 col-xl-5 photo-tovar">
-          <h4 class="d-block d-md-none animated fadeIn">Название товарной позиции </h4>
+          <h4 class="d-block d-md-none wow fadeIn">Название товарной позиции </h4>
           <img src="../img/photo-tovar.png" alt="tovar" class="animated fadeIn">
         </div>
         <div class="col-12 col-md-6 col-xl-7 col-left">
-          <h4 class="d-none d-md-block animated fadeIn">Название товарной позиции </h4>
+          <h4 class="d-none d-md-block wow fadeIn">Название товарной позиции </h4>
           <div class="row">
             <div class="col-12 col-xl-6 text-tovar">
-              <div class="toggle-text animated fadeIn">
+              <div class="toggle-text wow fadeIn">
                 <div class="toggle-text-inner">
                   <p>Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.</p>
                 </div>
                 <button class="d-block d-md-none show-more "><span class="show">Показать еще</span> <span class="svernut">Свернуть</span></button>
                 
               </div>
-             <button class="d-block d-md-none btn-black animated fadeIn" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
+             <button class="d-block d-md-none btn-black wow fadeIn" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
               <h6 class="animated fadeIn">Підходить для всіх способів приготування</h6>
-              <div class="d-flex coffemachine align-items-center animated fadeInLeft">
+              <div class="d-flex coffemachine align-items-center wow fadeInLeft">
                 <img src="../img/coffemachine-1.png" alt="coffemachine">
                 <img src="../img/coffemachine-2.png" alt="coffemachine">
                 <img src="../img/coffemachine-3.png" alt="coffemachine">
@@ -54,7 +54,7 @@
                 <img src="../img/sca.png" alt="sca" class="animated fadeIn">
               </a>
               <div class="d-flex">
-                <div class="question animated fadeIn">
+                <div class="question wow fadeIn">
                   <p>?</p>
                 </div>
                 <h6 class="animated fadeIn">Що таке <span>CSA?</span></h6>
@@ -66,12 +66,12 @@
       </div>
       <div class="row">
         <div class="col-12 col-xl-5">
-          <button class="btn-black d-none d-md-block animated fadeIn" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
+          <button class="btn-black d-none d-md-block wow fadeIn" onclick="openDialog('leave-request-dialog')"><i class="fa fa-envelope" aria-hidden="true"></i> Написать</button>
         </div>
         <div class="col-12 d-none d-md-flex d-xl-none vkus-sca-mob">
           <div class="row">
             <div class="col-6">
-              <div class="d-flex question-csa justify-content-center animated fadeIn">
+              <div class="d-flex question-csa justify-content-center wow fadeIn">
                 <div class="question">
                   <p>?</p>
                 </div>
@@ -91,25 +91,25 @@
           <h6 class="animated fadeIn">Фасовка</h6>
           <div class="d-flex justify-content-between wrap">
             <div class="d-flex justify-content-between mob-flex">
-              <div class="meshok animated fadeIn faster">
+              <div class="meshok wow fadeIn faster">
                 <img src="../img/meshok.png" alt="meshok">
                 <p>Мешок 60 кг<br />Advenste</p>
               </div>
-              <div class="meshok animated fadeIn">
+              <div class="meshok wow fadeIn">
                 <img src="../img/meshok.png" alt="meshok">
                 <p>Мешок 60 кг<br />Advenste</p>
               </div>
-              <div class="meshok animated fadeIn slower">
+              <div class="meshok wow fadeIn slower">
                 <img src="../img/meshok.png" alt="meshok">
                 <p>Мешок 60 кг<br />Advenste</p>
               </div>
             </div>
             <div class="konteiner d-flex flex-row flex-md-column justify-content-between">
-              <div class="konteiner-inner d-flex align-items-center animated fadeIn faster">
+              <div class="konteiner-inner d-flex align-items-center wow fadeIn faster">
                 <img src="../img/konteiner.png" alt="konteiner">
                 <p>Контейнер<br />12.5 т</p>
               </div>
-              <div class="konteiner-inner d-flex align-items-center animated fadeIn">
+              <div class="konteiner-inner d-flex align-items-center wow fadeIn">
                 <img src="../img/konteiner.png" alt="konteiner">
                 <p>Контейнер<br />12.5 т</p>
               </div>
@@ -119,7 +119,7 @@
       </div>
       <div class="other-varieties">
         <h4 class="animated fadeIn">Другие сорта</h4>
-        <div class="owl-carousel varieties-carousel animated fadeIn">
+        <div class="owl-carousel varieties-carousel wow fadeIn">
           <a href="#" class="varietie">
             <img src="../img/varietie.png" alt="varietie">
             <div class="bg-text">
@@ -174,4 +174,4 @@
     </div>
   </div>
 </main>
-@@include('components/_footer.html', {"theme": "black-bg animated zoomIn"})
+@@include('components/_footer.html', {"theme": "black-bg wow zoomIn"})

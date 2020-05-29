@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  
+    new WOW().init();
+
+    window.goToPage = function (href) {
+        window.location.assign(href)
+    }
+
     function isMobile() {
         return window.innerWidth <= 767
     }
@@ -48,14 +53,8 @@ $(document).ready(function() {
             items: 1,
             margin: 10,
         });
-    } else { 
-        $(".catalog-carousel").niceScroll({
-            cursorcolor: "#b9b9b9",
-            cursorwidth: "4px",
-            cursoropacitymin: 1
-        });
-    }
-
+    } 
+    
     $('.other-varieties .varieties-carousel').owlCarousel({
         loop: true,
         autoplay: false,
@@ -116,6 +115,14 @@ $(document).ready(function() {
         $('.' + urlParams.get('dialog')).addClass('open');
     }
 
+    if (window.innerWidth > 1200) {
+        $(".catalog-carousel").niceScroll({
+            cursorcolor: "#b9b9b9",
+            cursorwidth: "4px",
+            cursoropacitymin: 1
+        });
+    }
+
     $('.city-select').niceSelect();
 
     // clone for animation
@@ -127,6 +134,7 @@ $(document).ready(function() {
     var isTileView = true;
     $('.view-toggle').click(function(){
         if (isTileView) {
+            console.log('here')
             $('.pills-btn-text').removeClass('d-none');
             $('.tile-btn-text').addClass('d-none');
             $('.toggle-animation').removeClass('open');
@@ -134,6 +142,7 @@ $(document).ready(function() {
                 $('.tile-wrap').addClass('d-none');
                 $('.toggle-animation').addClass('open');
                 $('.pills-wrap').removeClass('d-none');
+                $('.catalog-carousel').getNiceScroll().resize();
             }, 500);
             isTileView = false;
         } else {
@@ -141,7 +150,6 @@ $(document).ready(function() {
             $('.tile-btn-text').removeClass('d-none');
             $('.toggle-animation').removeClass('open');
             setTimeout(function() {
-                console.log($('.catalog-main').height());
                 $('.pills-wrap').addClass('d-none');
                 $('.toggle-animation').addClass('open');
                 $('.tile-wrap').removeClass('d-none');
@@ -186,4 +194,26 @@ $(document).ready(function() {
     if (window.innerWidth <= 500) {
         $('.contact-main #lottie svg').attr('viewBox', '250 100 900 740');
     }
+    var angles = [0, 0, 0];
+    var hovers = [false, false, false];
+    $('.bg-stages').on('mouseenter', function(e) {
+        var self = this;
+        $('.bg-stages').each(function(index, item) {
+            if (item === self) {
+                hovers[index] = true;
+            }
+            $(self).on('mouseleave', function() {
+                hovers = [false, false, false];
+            });
+        });
+    })
+    function rotate() {
+        $('.bg-stages .text').each(function(index, item) {
+            if (!hovers[index]) {
+                angles[index] += 1;
+                $(item).css('transform', 'translate(-50%, -50%) rotate(' + angles[index] + 'deg)')
+            }
+        })
+    };
+    setInterval(rotate, 10)
 })

@@ -31,6 +31,10 @@ a:hover {
   animation-delay: 2.5s;
 }
 
+.wow {
+  animation-delay: 1s;
+}
+
 @keyframes rotate {
   from { transform: translate(-50%, -50%) rotate(0); }
   to { transform: translate(-50%, -50%) rotate(360deg); }

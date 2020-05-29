@@ -17,7 +17,7 @@
       .img-wrap {
         width: 60%;
         position: relative;
-        min-height: calc(100vh - 55px);
+        min-height: calc(100vh - 155px);
         animation-delay: 0.5s;
         img,
         .animation {
@@ -41,7 +41,7 @@
         width: 40%;
         padding-left: 40px;
         min-height: 100%;
-        padding-top: 100px;
+        padding-top: 30px;
         &::before {
           content: '';
           background-color: #24222d;
