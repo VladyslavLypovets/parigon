@@ -1,9 +1,24 @@
 .main-tovar{
   min-height: 100vh;
+  position: relative;
+  // 0 0 1920 2683
+  .tovar-line {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @media(max-width: 1199px) {
+      display: none;
+    }
+  }
   .top-bg{
     background: url(../img/top-bg-product.png);
     background-size: cover;
     background-position-x: center;
+    position: relative;
+    z-index: 2;
     .btn-border-gold{
       border: 1px solid #e3b079;
       width: 212px;
@@ -26,6 +41,10 @@
     background-size: cover;
     padding-bottom: 180px ;
     background-position-y: bottom;
+    .info-tovar-inner {
+      position: relative;
+      z-index: 2;
+    }
     .photo-tovar{
       margin-top: -60px;
       img{

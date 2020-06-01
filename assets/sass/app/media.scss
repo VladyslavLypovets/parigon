@@ -576,7 +576,6 @@
   .corn-main{
     padding-top: 183px;
     padding-bottom: 120px;
-    background: url(../img/bg-tabl-corn.png);
     background-size: cover;
     background-position-x: right;
     .info-corn{
@@ -653,7 +652,6 @@
   .coffe-main{
     padding-top: 183px;
     padding-bottom: 120px;
-    background: url(../img/bg-tabl-coffe.png);
     background-size: cover;
     background-position-x: right;
     .info-coffe{
@@ -732,7 +730,6 @@
   .kakao-main{
     padding-top: 183px;
     padding-bottom: 120px;
-    background: url(../img/bg-tabl-kakao.png);
     background-size: cover;
     background-position-x: right;
     .info-kakao{
@@ -1962,6 +1959,9 @@
   .coffe-main{
     background: url(../img/bg-mob-coffe.png);
     background-size: cover;
+    .bg {
+      display: none;
+    }
     .info-coffe{
       .parigon-coffe {
         margin-top: 125px;
@@ -2249,6 +2249,7 @@
           width: 100%;
           .catalog-carousel{
             position: relative;
+            max-height: unset !important;
             .nav-link{
               .kind-catalog{
                 margin-bottom: 45px;

@@ -6,6 +6,20 @@
     background-position-x: 70%;
     background-position-y: center;
     overflow: hidden;
+    position: relative;
+    .catalog-animation {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .catalog-main-inner {
+        position: relative;
+        z-index: 2;
+        // pointer-events: none;
+    }
     h4 {
         color: #24222d;
         font-size: 60px;
@@ -68,6 +82,10 @@
         .name-tabs {
             width: 50%;
             animation-delay: 0.7s;
+            .btn-wrap {
+                display: flex;
+                justify-content: space-between;
+            }
             .btn-border-black {
                 font-size: 16px;
                 color: #24222d;
@@ -75,7 +93,7 @@
                 height: 51px;
                 background-color: unset;
                 border: 1px solid #000000;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 transition: all 0.3s;
                 &:hover {
                     background-color: #e3b079;
@@ -87,28 +105,11 @@
                 @media(min-width: 1199px) {
                     opacity: 0;
                     transition: all 0.5s;
-                    min-height: 1100px;
                 }
                 &.open {
                     opacity: 1;
                 }
                 .category {
-                    .forastero {
-                        background: url(../img/bg-forastero.png);
-                        height: 51px;
-                        background-size: cover;
-                        width: 225px;
-                        margin-bottom: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        h6 {
-                            font-size: 28px;
-                            color: #24222d;
-                            margin-bottom: 0;
-                            font-weight: 500;
-                        }
-                    }
                     .nav-link {
                         cursor: pointer;
                         margin-bottom: 20px;
@@ -138,22 +139,21 @@
                             background-color: unset;
                         }
                     }
-                    .corienta {
-                        margin-top: 60px;
-                        background: url(../img/bg-corienta.png);
-                        height: 51px;
-                        background-size: cover;
-                        width: 225px;
-                        margin-bottom: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        h6 {
-                            font-size: 28px;
-                            color: #ffffff;
-                            margin-bottom: 0;
-                            font-weight: 500;
-                        }
+                }
+                .forastero {
+                    background: url(../img/bg-forastero.png);
+                    height: 51px;
+                    background-size: cover;
+                    width: 225px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h6 {
+                        font-size: 28px;
+                        color: #24222d;
+                        margin-bottom: 0;
+                        font-weight: 500;
                     }
                 }
                 .tile-wrap {
@@ -161,9 +161,24 @@
                     max-height: 100%;
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
+                    .category-wrap {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-bottom: 20px;
+                        .forastero, .corienta {
+                            margin: 0;
+                        }
+                    }
+                    .category-wrap-bottom {
+                        margin-top: 20px;
+                    }
                     .move-top, .move-bottom {
                         height: 100%;
-                        width: calc(50% - 15px);
+                        width: calc(50% - 7px);
+                        overflow: hidden;
+                        max-height: 695px;
                         .data-list {
                             padding-left: 0;
                             height: 100%;
@@ -171,12 +186,12 @@
                             overflow-y: hidden;
                             display: flex;
                             flex-wrap: wrap;
-                            animation: marquee 20s infinite linear;
+                            animation: marquee-bottom 30s infinite linear;
                             margin-bottom: 0;
                             .item {
                                 position: relative;
                                 width: 100%;
-                                margin-bottom: 10px;
+                                margin-bottom: 14px;
                                 background-size: cover;
                                 height: 200px;
                                 .item-inner {
@@ -194,7 +209,7 @@
                                         top: 50%;
                                         left: 50%;
                                         text-align: center;
-                                        font-size: 18px;
+                                        font-size: 32px;
                                         font-weight: 700;
                                         color: #24222d;
                                         margin-bottom: 0;
@@ -204,7 +219,7 @@
                                     }
                                     .description {
                                         position: absolute;
-                                        top: 50px;
+                                        top: 65px;
                                         opacity: 0;
                                         overflow: hidden;
                                         color: #24222d;
@@ -228,7 +243,7 @@
                     }
                     .move-bottom {
                         .data-list {
-                            animation: marquee-bottom 20s infinite linear;
+                            animation: marquee-bottom-second 30s infinite linear;
                             .item {
                                 .item-inner {
                                     background: rgba(159, 158, 163, 0.7);
@@ -242,6 +257,31 @@
                     }
                 }
             }
+            .corienta {
+                margin-top: 60px;
+                background: url(../img/bg-corienta.png);
+                height: 51px;
+                background-size: cover;
+                width: 225px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h6 {
+                    font-size: 28px;
+                    color: #ffffff;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                }
+            }
+            .corienta-tile {
+                background: url(../img/bg-corienta-tile.png);
+                background-size: cover;
+                margin: 0;
+                @media(max-width: 1199px) {
+                    display: none;
+                }
+            }
         }
     }
     .catalog-carousel {
@@ -251,22 +291,11 @@
     }
 }
 
-
-
-     
-// .marquee span {
-//     color:#212121;
-//     font-size:25px;
-//     display:inline-block;
-//     padding-left:100%;
-//     animation: marquee 10s infinite linear;
-// }
-
-@keyframes marquee{
-    0%{transform: translate(0, 0);}
-    100%{transform: translate(0, -100%)}
-}
 @keyframes marquee-bottom{
-    0%{transform: translate(0, -100%);}
-    100%{transform: translate(0, 0%)}
+    0%{transform: translateY(-97%);}
+    100%{transform: translateY(3%)}
+}
+@keyframes marquee-bottom-second{
+    0%{transform: translateY(-106%);}
+    100%{transform: translateY(-6%)}
 }

@@ -96,7 +96,6 @@ $(document).ready(function() {
         $('#dialogs').removeClass('open');
         $('body').removeClass('no-scroll');
         $('.dialog').removeClass('open');
-        // $('.nicescroll').getNiceScroll().resize();
     }
 
     window.openDialog = function(name) {

@@ -1,10 +1,24 @@
 @@include('components/_header.html', {"menuImg": "img/menu-light.png", "theme": "white wow zoomIn", "title": "Corn"})
 <main class="corn-main">
+  
+  <style>
+    path {
+      stroke: rgb(184, 172, 103);
+    }
+    .top {
+      background: rgb(184, 172, 103);
+    }
+  </style>
+  
+  <div class="bg-anim wow fadeIn" data-wow-delay="0s">
+    <div class="top"></div>
+    @@include('components/line-animation.html')
+  </div>
   <div class="info-corn">
     <div class="container">
       <div class="parigon-corn d-flex justify-content-between align-items-center flex-wrap">
         <div class="photo-corn">
-          <img src="../img/corn.png" alt="corn" class="wow fadeIn">
+          <img src="../img/corn.png" alt="corn">
         </div>
         <div class="title-corn">
           <h4 class="wow fadeIn"><span>Паригон Украина  -</span><br />

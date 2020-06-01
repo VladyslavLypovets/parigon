@@ -12,6 +12,19 @@
     background-size: cover;
     padding-bottom: 140px;
     background-position-y: bottom;
+    position: relative;
+    .info-lines {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+    .informaton-inner {
+      position: relative;
+      z-index: 2;
+    }
     .text-company{
       padding-top: 70px;
       img{

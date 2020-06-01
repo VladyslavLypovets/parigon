@@ -7,6 +7,17 @@
     height: 28vh;
     background-position-x: center;
   }
+  .preimushestvo-lines {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    @media(max-width: 1199px) {
+      display: none;
+    }
+  }
   .preimushestvo-rabot{
     background: url(../img/bg-preimushestva.png);
     background-size: cover;
@@ -14,6 +25,11 @@
     padding-bottom: 140px;
     background-position-y: bottom;
     background-position-x: right;
+    position: relative;
+    .preimushestvo-rabot-inner {
+      position: relative;
+      z-index: 2;
+    }
     .preimushestva{
       h4{
         color: #24222d;

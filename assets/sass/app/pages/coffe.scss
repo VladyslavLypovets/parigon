@@ -1,9 +1,51 @@
 .coffe-main{
   padding-top: 325px;
+  padding-bottom: 150px;
+  overflow: hidden;
+  position: relative;
   background: url(../img/bg-coffe.png);
   background-size: cover;
-  padding-bottom: 150px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: url(../img/bg-coffe-2.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 2;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .bg-anim {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    @media(max-width: 767px) {
+      display: none;
+    }
+    .top {
+      position: absolute;
+      height: 300px;
+      opacity: 1;
+      top: -325px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      @media(max-width: 1199px) {
+        top: -270px;
+      }
+      @media(max-width: 992px) {
+        top: -330px;
+      }
+    }
+  }
   .info-coffe{
+    position: relative;
+    z-index: 2;
     .parigon-coffe{
       width: 100%;
       margin-top: -123px;
@@ -24,7 +66,6 @@
           font-weight: 400;
           margin-bottom: 34px;
           animation-delay: 0.5s;
-          padding-top: 25px;
           span{
             font-weight: 600;
           }
