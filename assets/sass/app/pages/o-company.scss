@@ -8,7 +8,7 @@
   h3{
     color: #24222d;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     margin-bottom: 55px;
     position: relative;
@@ -19,7 +19,7 @@
       left: 0;
       height: 3px;
       background-color: #e3b079;
-      width: 11%;
+      width: 110px;
     }
   }
   .company-text-block p{
@@ -51,11 +51,11 @@
     }
     .quote{
       position: absolute;
-      top: -35px;
+      top: -20px;
       background-color: #ffffff;
       padding: 20px 50px 19px 25px;
-      right: 90%;
-      width: 110%;
+      right: 85%;
+      width: 160%;
       transform: translate(40px, -50px);
       z-index: -1;
       i{
@@ -106,7 +106,7 @@
     h4{
       color: #24222d;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 44px;
       position: relative;
       &::before{
@@ -116,7 +116,7 @@
         top: 50%;
         height: 3px;
         background-color: #e3b079;
-        width: 10%;
+        width: 110px;
       }
     }
     .business{

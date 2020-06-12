@@ -82,6 +82,16 @@
         .name-tabs {
             width: 50%;
             animation-delay: 0.7s;
+            margin-top: 146px;
+            @media (max-width: 1199px){
+                margin-top: 90px;
+            }
+            @media (max-width: 992px){
+                margin-top: 80px;
+            }
+            @media (max-width: 767px){
+                margin-top: 0;
+            }
             .btn-wrap {
                 display: flex;
                 justify-content: space-between;

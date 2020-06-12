@@ -35,11 +35,11 @@
         color: #24222d;
         font-family: "Avenir Next Cyr";
         font-size: 60px;
-        font-weight: 500;
+        font-weight: 400;
         margin: 0 0 80px;
         position: relative;
         span{
-          font-weight: 600;
+          font-weight: 500;
         }
         &::before{
           position: absolute;
@@ -102,8 +102,8 @@
               bottom: 0;
             }
             svg{
-              width: 39px;
-              height: 39px;
+              width: 50px;
+              height: 50px;
               fill: #e3b079;
               transition: all 0.3s;
             }
@@ -179,6 +179,7 @@
         width: 100%;
       }
       h4{
+        margin-left: 10px;
         color: #24222d;
         font-family: "Avenir Next Cyr";
         font-size: 60px;
@@ -196,6 +197,7 @@
         }
       }
       p{
+        margin-left: 10px;
         color: #24222d;
         font-size: 16px;
         font-weight: 400;
@@ -205,6 +207,7 @@
       .animaziya{
         width: 100%;
         margin-top: -39px;
+        margin-left: 10px;
       }
     }
   }
