@@ -24,12 +24,9 @@
 
 @font-face {
 	font-family: 'Avenir Next Cyr';
-	src: url('AvenirNextCyr-Demi.eot');
-	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
-		url('AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
-		url('AvenirNextCyr-Demi.woff') format('woff'),
-		url('AvenirNextCyr-Demi.ttf') format('truetype');
-	font-weight: bold;
+	src: url('AvenirNextCyr-Demi.woff2') format('woff2'),
+			url('AvenirNextCyr-Demi.woff') format('woff');
+	font-weight: 600;
 	font-style: normal;
 }
 

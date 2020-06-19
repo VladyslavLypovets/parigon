@@ -24,8 +24,8 @@
     } else if (typeof module === "object" && module.exports) {
         module.exports = factory(root);
     } else {
-        root.lottie = factory(root);
-        root.bodymovin = root.lottie;
+        root.animation = factory(root);
+        root.bodymovin = root.animation;
     }
 }((window || {}), function(window) {
   "use strict";
@@ -8240,9 +8240,16 @@ var readyStateCheckInterval = setInterval(checkReady, 100);
         autoplay: true,
         animationData: animationData
     };
+    $(document).scroll(function () {
+        s_top = $(document).scrollTop();
+        yes = $("#load-animation").offset().top;
+        if(s_top + window.innerHeight * 0.75 > yes){
+            console.log('here')
+            setTimeout(function() {
+                animation.loadAnimation(params);
+            }, 1000);
+        }
+    });
 
-    var anim;
-
-    anim = lottie.loadAnimation(params);
 
 </script>

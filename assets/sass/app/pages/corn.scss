@@ -53,7 +53,7 @@
         width: 53%;
         img{
           width: 100%;
-          animation-delay: 1.5s;
+          animation-delay: 1s;
         }
       }
       .title-corn{
@@ -112,7 +112,7 @@
         h3{
           color: #24222d;
           font-size: 60px;
-          font-weight: 500;
+          font-weight: 600;
           margin-bottom: 70px;
           position: relative;
           animation-delay: 2s;
@@ -197,6 +197,8 @@
               top: 50%;
               left: 50%;
               z-index: -1;
+              transform: translate(-50% -50%);
+              transition: all 0.3s linear;
             }
             .number{
               color: #e3b079;
@@ -232,7 +234,7 @@
         h3{
           color: #24222d;
           font-size: 60px;
-          font-weight: 500;
+          font-weight: 600;
           margin-bottom: 70px;
           position: relative;
           &::before{

@@ -79,9 +79,10 @@
             .btn-link {
               display: flex;
               padding: 0;
-              i{
-                color: rgba(255, 255, 255, 0.15);
-                font-size: 55px;
+              svg {
+                width: 41px;
+                height: 57px;
+                fill: rgba(255, 255, 255, 0.15);
                 margin-right: 42px;
               }
               h5{
@@ -103,8 +104,8 @@
               }
               
               &[aria-expanded="true"] {
-                i{
-                  color: #e3b079;
+                svg{
+                  fill: #e3b079;
                 }
               }
     

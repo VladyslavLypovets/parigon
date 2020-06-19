@@ -39,7 +39,7 @@
         color: #24222d;
         font-size: 60px;
         margin: 0 0 80px;
-        font-weight: 500;
+        font-weight: 600;
         animation-delay: 1s;
         span {
           position: relative;
@@ -93,12 +93,8 @@
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              transition: all 1.2s;
+              transition: all 0.3s linear;
               z-index: -1;
-              animation-name: rotate;
-              animation-duration: 7s;
-              animation-iteration-count: infinite;
-              animation-timing-function: linear;
             }
           }
         }
@@ -107,7 +103,7 @@
         color: #24222d;
         font-size: 60px;
         margin: 40px 0 65px;
-        font-weight: 500;
+        font-weight: 600;
         position: relative;
         &::before{
           position: absolute;
@@ -131,11 +127,11 @@
       margin-top: 100px;
       h4{
         color: #24222d;
-        font-size: 55px;
+        font-size: 48px;
         margin: 0 0 70px;
-        font-weight: 500;
+        font-weight: 600;
         position: relative; 
-        animation-delay: 4s;
+        animation-delay: 1s;
         &::before{
           position: absolute;
           content: '';
@@ -153,12 +149,12 @@
         line-height: 24px;
         margin-bottom: 25px;
       }
-      .photo-consulstva{
-        float: right;
-        max-width: 50%;
-        position: relative;
-        margin-left: 70px;
-        .item{
+      .item {
+        .photo-consulstva{
+          float: right;
+          max-width: 50%;
+          position: relative;
+          margin-left: 50px;
           position: relative;
           padding: 0 25px 20px 0;
           img.global{
@@ -172,42 +168,42 @@
             width: 95%;
           }
         }
-        .owl-nav{
-          display: block;
-          i{
-            font-size: 20px;
+      }
+      .owl-nav{
+        display: block;
+        i{
+          font-size: 20px;
+        }
+        .owl-prev{
+          position: absolute;
+          right: 103px;
+          top: 0;
+          transform: translateY(-50%);
+          width: 37px;
+          height: 59px;
+          background-color: #e3b079;
+          transition: all 0.3s;
+          &:hover{
+            background-color: #fff;
           }
-          .owl-prev{
-            position: absolute;
-            right: 103px;
-            top: 0;
-            transform: translateY(-50%);
-            width: 37px;
-            height: 59px;
-            background-color: #e3b079;
-            transition: all 0.3s;
-            &:hover{
-              background-color: #fff;
-            }
-            &:focus{
-              outline: none;
-            }
+          &:focus{
+            outline: none;
           }
-          .owl-next{
-            position: absolute;
-            right: 56px;
-            top: 0;
-            transform: translateY(-50%);
-            width: 37px;
-            height: 59px;
-            background-color: #e3b079;
-            transition: all 0.3s;
-            &:hover{
-              background-color: #fff;
-            }
-            &:focus{
-              outline: none;
-            }
+        }
+        .owl-next{
+          position: absolute;
+          right: 56px;
+          top: 0;
+          transform: translateY(-50%);
+          width: 37px;
+          height: 59px;
+          background-color: #e3b079;
+          transition: all 0.3s;
+          &:hover{
+            background-color: #fff;
+          }
+          &:focus{
+            outline: none;
           }
         }
       }

@@ -1541,28 +1541,33 @@
         margin-top: 5px;
         display: flex;
         flex-direction: column;
-        .photo-consulstva{
-          max-width: 100%;
-          order: 2;
-          margin: 35px 0 0;
-          animation-delay: 4.5s;
-          .item{
+        .item {
+          display: flex;
+          flex-direction: column;
+          .photo-consulstva{
+            max-width: 100%;
+            order: 2;
+            margin: 35px 0 0;
+            animation-delay: 4.5s;
             padding: 0;
             img.shadow{
               display: none;
             }
           }
-          .owl-nav{
-            .owl-prev{
-              left: 0;
-              top: 50%;
-            }
-            .owl-next{
-              right: 0;
-              top: 50%;
-            }
+        }
+        .owl-nav{
+          .owl-prev{
+            left: 0;
+            top: unset;
+            transform: unset;
+            bottom: 43.5vw;
           }
-          
+          .owl-next{
+            right: 0;
+            top: unset;
+            transform: unset;
+            bottom: 43.5vw;
+          }
         }
         h4{
           font-size: 26px;

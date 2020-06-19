@@ -29,9 +29,9 @@ $(document).ready(function() {
 
     $('.nice-select').niceSelect();
 
-    $('.consulstva .photo-consulstva').owlCarousel({
+    $('.consulstva .owl-carousel').owlCarousel({
         loop: true,
-        autoplay: true,
+        // autoplay: true,
 
         autoplayHoverPause: true,
         nav: true,
@@ -56,7 +56,6 @@ $(document).ready(function() {
     } 
     
     $('.other-varieties .varieties-carousel').owlCarousel({
-        loop: true,
         autoplay: false,
         nav: false,
         margin: 20,
@@ -133,10 +132,10 @@ $(document).ready(function() {
     var isTileView = true;
     $('.view-toggle').click(function(){
         if (isTileView) {
-            console.log('here')
             $('.pills-btn-text').removeClass('d-none');
             $('.tile-btn-text').addClass('d-none');
             $('.toggle-animation').removeClass('open');
+            $('.corienta.corienta-tile').addClass('d-none');
             setTimeout(function() {
                 $('.tile-wrap').addClass('d-none');
                 $('.toggle-animation').addClass('open');
@@ -145,6 +144,7 @@ $(document).ready(function() {
             }, 500);
             isTileView = false;
         } else {
+            $('.corienta.corienta-tile').removeClass('d-none');
             $('.pills-btn-text').addClass('d-none');
             $('.tile-btn-text').removeClass('d-none');
             $('.toggle-animation').removeClass('open');
@@ -193,26 +193,42 @@ $(document).ready(function() {
     if (window.innerWidth <= 500) {
         $('.contact-main #lottie svg').attr('viewBox', '250 100 900 740');
     }
-    var angles = [0, 0, 0];
-    var hovers = [false, false, false];
-    $('.bg-stages').on('mouseenter', function(e) {
-        var self = this;
-        $('.bg-stages').each(function(index, item) {
-            if (item === self) {
-                hovers[index] = true;
-            }
-            $(self).on('mouseleave', function() {
-                hovers = [false, false, false];
+
+    if ($('.bg-stages').length) {
+        var angles = [];
+        var hovers = [];
+
+        for(var i = 0; i < $('.bg-stages').length; i++) {
+            angles.push(0);
+            hovers.push(false)
+        }
+
+        $('.bg-stages').on('mouseenter', function(e) {
+            var self = this;
+            $('.bg-stages').each(function(index, item) {
+                if (item === self) {
+                    hovers[index] = true;
+                }
+                $(self).on('mouseleave', function() {
+                    hovers = [false, false, false];
+                });
             });
-        });
-    })
-    function rotate() {
-        $('.bg-stages .text').each(function(index, item) {
-            if (!hovers[index]) {
-                angles[index] += 1;
-                $(item).css('transform', 'translate(-50%, -50%) rotate(' + angles[index] + 'deg)')
-            }
         })
-    };
-    setInterval(rotate, 10)
+        function rotate() {
+            $('.bg-stages .text').each(function(index, item) {
+                if (!hovers[index]) {
+                        angles[index] += 35;
+                    $(item).css('transform', 'translate(-50%, -50%) rotate(' + angles[index] + 'deg)')
+                }
+            })
+        };
+        setInterval(rotate, 300);
+    }
+
+
+    setTimeout(function() {
+        if (window.lottie) {
+            lottie.loadAnimation(params);
+        }
+    }, 2000);
 })

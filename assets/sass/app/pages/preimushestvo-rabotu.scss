@@ -65,7 +65,7 @@
         color: #24222d;
         font-family: "Avenir Next Cyr";
         font-size: 60px;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0 0 70px;
         position: relative;
         span{
@@ -139,7 +139,7 @@
         color: #24222d;
         font-family: "Avenir Next Cyr";
         font-size: 60px;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0 0 75px;
         position: relative;
         span{
@@ -182,9 +182,10 @@
         margin-left: 10px;
         color: #24222d;
         font-family: "Avenir Next Cyr";
-        font-size: 60px;
-        font-weight: 500;
-        margin: 0 0 70px;
+        font-size: 58px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: 0 0 50px;
         position: relative;
         &::before{
           position: absolute;

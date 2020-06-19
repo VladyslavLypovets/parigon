@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/app.min.css" />
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link href="https://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <script src="js/vendor.min.js"></script>
     <title>Товар</title>
 </head>
 
@@ -127,8 +128,8 @@
     } else if (typeof module === "object" && module.exports) {
         module.exports = factory(root);
     } else {
-        root.lottie = factory(root);
-        root.bodymovin = root.lottie;
+        root.animation = factory(root);
+        root.bodymovin = root.animation;
     }
 }((window || {}), function(window) {
   "use strict";
@@ -8343,10 +8344,17 @@ var readyStateCheckInterval = setInterval(checkReady, 100);
         autoplay: true,
         animationData: animationData
     };
+    $(document).scroll(function () {
+        s_top = $(document).scrollTop();
+        yes = $("#load-animation").offset().top;
+        if(s_top + window.innerHeight * 0.75 > yes){
+            console.log('here')
+            setTimeout(function() {
+                animation.loadAnimation(params);
+            }, 1000);
+        }
+    });
 
-    var anim;
-
-    anim = lottie.loadAnimation(params);
 
 </script>
 
@@ -8387,7 +8395,7 @@ var readyStateCheckInterval = setInterval(checkReady, 100);
                   <span class="animated fadeInLeft"></span>
                   <span class="animated fadeInLeft"></span>
                 </div>
-                <h5 class="animated fadeIn">Темне обсмеження</h5>
+                <h5 class="animated fadeIn">Темне обсмаження</h5>
               </div>
               
             </div>
@@ -8460,7 +8468,7 @@ var readyStateCheckInterval = setInterval(checkReady, 100);
           </div>
         </div>
       </div>
-      <div class="other-varieties">
+      <div class="other-varieties" id="load-animation">
         <h4 class="animated fadeIn">Другие сорта</h4>
         <div class="owl-carousel varieties-carousel wow fadeIn">
           <a href="#" class="varietie">
@@ -8587,7 +8595,6 @@ var readyStateCheckInterval = setInterval(checkReady, 100);
   </div>
 
 </div>
-<script src="js/vendor.min.js"></script>
 <script src="js/menu.min.js"></script>
 <script src="js/autoScroling.min.js"></script>
 <script src="js/animation-adaptation.min.js"></script>
