@@ -55,6 +55,9 @@
                     img {
                         width: 100%;
                         margin-bottom: 40px;
+                        @media (max-width: 767px){
+                            margin-bottom: 20px;
+                        }
                     }
                     p {
                         opacity: 0.73;

@@ -83,7 +83,12 @@
                 width: 41px;
                 height: 57px;
                 fill: rgba(255, 255, 255, 0.15);
-                margin-right: 42px;
+                margin-right: 32px;
+                @media (max-width: 1199px){
+                  width: 18px;
+                  height: 25px;
+                  margin-right: 15px;
+                }
               }
               h5{
                 color: #ffffff;
@@ -102,13 +107,11 @@
               &:focus{
                 text-decoration: none;
               }
-              
               &[aria-expanded="true"] {
                 svg{
                   fill: #e3b079;
                 }
               }
-    
             }
           }
           .card-body{
@@ -143,6 +146,9 @@
               &:hover{
                 background-color: #fff;
                 color: #e3b079;
+              }
+              @media(max-width: 767px) {
+                width: 100%;
               }
             }
           }

@@ -43,6 +43,17 @@ $(document).ready(function() {
         autoplayTimeout: 3000,
         margin: 5,
     });
+    
+    $('.location .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: false,
+        dots: true,
+        autoplayHoverPause: true,
+        nav: false,
+        items: 1,
+        margin: 5,
+    });
+    
     if (window.innerWidth <= 767) {
         $('.category .catalog-carousel').owlCarousel({
             nav: true,

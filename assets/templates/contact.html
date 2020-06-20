@@ -14,33 +14,41 @@
             <div class="accordion" id="accordionExample">
               <div class="card">
                 <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
+                  <h2 class="mb-0 d-flex justify-content-between align-items-center">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       @@include('components/pointer.html')
                       <div>
                         <h5>Болгарія</h5>
                         <h6>Варна, К-н Петко Воєвода, 40</h6>
                       </div>
+                      <button class="btn-gold d-none d-md-block d-xl-none" onclick="openDialog('leave-request-dialog')">Напишіть нам</button> 
                     </button>
                   </h2>
                 </div>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                     <div class="d-flex justify-content-between flex-wrap">
-                      <div>
-                      <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
-                      </p>
+                      <div class="w-100">
+                        <div class="d-flex">
+                          <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                          </p>
+                          <p class="d-none d-md-block d-xl-none ml-5">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Татьяна Менеджер 
+                          </p>
+                        </div>
+                      
                       <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
                       </p>
-                      <p>
+                      <p class="d-block d-md-none d-xl-block">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         Татьяна Менеджер 
                       </p>
-                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      <button class="btn-gold d-block d-md-none d-xl-block" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
                       </div>
                     </div>
                   </div>
@@ -48,33 +56,41 @@
               </div>
               <div class="card">
                 <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
+                  <h2 class="mb-0 d-flex justify-content-between align-items-center">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       @@include('components/pointer.html')
                       <div>
                         <h5>Україна</h5>
                         <h6>Київ, Е.Сверстюка, 23</h6>
                       </div>
+                      <button class="btn-gold d-none d-md-block d-xl-none" onclick="openDialog('leave-request-dialog')">Напишіть нам</button> 
                     </button>
                   </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                   <div class="card-body">
                     <div class="d-flex justify-content-between flex-wrap">
-                      <div>
-                      <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
-                      </p>
+                      <div class="w-100">
+                        <div class="d-flex">
+                          <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                          </p>
+                          <p class="d-none d-md-block d-xl-none ml-5">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Татьяна Менеджер 
+                          </p>
+                        </div>
+                      
                       <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
                       </p>
-                      <p>
+                      <p class="d-block d-md-none d-xl-block">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         Татьяна Менеджер 
                       </p>
-                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      <button class="btn-gold d-block d-md-none d-xl-block" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
                       </div>
                     </div>
                   </div>
@@ -82,33 +98,41 @@
               </div>
               <div class="card">
                 <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
+                  <h2 class="mb-0 d-flex justify-content-between align-items-center">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       @@include('components/pointer.html')
                       <div>
                         <h5>Венесуела</h5>
                         <h6>Парламар, 4-го Травня, Джумбо<br />Сюидад Коммерсиал, оф.98</h6>
                       </div>
+                      <button class="btn-gold d-none d-md-block d-xl-none" onclick="openDialog('leave-request-dialog')">Напишіть нам</button> 
                     </button>
                   </h2>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                   <div class="card-body">
                     <div class="d-flex justify-content-between flex-wrap">
-                      <div>
-                      <p>
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
-                      </p>
+                      <div class="w-100">
+                        <div class="d-flex">
+                          <p>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:parigoncocoa@gmail.com">parigoncocoa@gmail.com</a> 
+                          </p>
+                          <p class="d-none d-md-block d-xl-none ml-5">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Татьяна Менеджер 
+                          </p>
+                        </div>
+                      
                       <p>
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <a href="tel:+38(097) 972-42-23">+38(097) 972-42-23</a> 
                       </p>
-                      <p>
+                      <p class="d-block d-md-none d-xl-block">
                         <i class="fa fa-user" aria-hidden="true"></i>
                         Татьяна Менеджер 
                       </p>
-                      <button class="btn-gold" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
+                      <button class="btn-gold d-block d-md-none d-xl-block" onclick="openDialog('leave-request-dialog')">Напишіть нам</button>
                       </div>
                     </div>
                   </div>

@@ -127,6 +127,9 @@
           font-weight: 500;
           margin: 0 0 23px;
           animation-delay: 5s;
+          @media (max-width: 767px){
+            margin-top: 25px;
+          }
         }
         img{
           margin-bottom: 40px;
@@ -165,6 +168,9 @@
           line-height: 24px;
           margin: 15px 0 0;
           animation-delay: 6s;
+          @media (max-width: 767px){
+            text-align: center;
+          }
         }
       }
     }

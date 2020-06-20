@@ -8,6 +8,7 @@
     background-position-x: center;
   }
   .informaton{
+    background-position-x: right;
     background: url(../img/bg-info-company.png);
     background-size: cover;
     padding-bottom: 140px;
@@ -189,6 +190,9 @@
           &:focus{
             outline: none;
           }
+          @media (max-width: 767px){
+            width: 29px;
+          }
         }
         .owl-next{
           position: absolute;
@@ -205,8 +209,18 @@
           &:focus{
             outline: none;
           }
+          @media (max-width: 767px){
+            width: 29px;
+          }
         }
       }
+    }
+    @media (max-width: 1400px){
+      background-position-x: 100%;
+    }
+    @media (max-width: 1199px){
+      background: url(../img/bg-o-company.png);
+      background-size: cover;
     }
   }
 }

@@ -279,9 +279,11 @@
             margin-bottom: 20px;
           }
         } 
-        
+        // .fond-img img {
+        // }
       } 
       .text-info{
+        margin-top: 55px;
         p{
           font-size: 15px;
           width: unset;
@@ -566,9 +568,19 @@
                   margin-right: 16px;
                 }
               }
+              .btn-gold{
+                border: none;
+                width: 256px;
+                height: 51px;
+                background-color: #e3b079;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                transition: all 0.3s;
+              }
             } 
             .card-body{
-              margin: 0 0 0 16px;
+              margin: 0;
             }
             &:last-child{
               .card-header{
@@ -1390,7 +1402,7 @@
     } 
   }
   .company-main {
-    padding-top: 120px;
+    padding-top: 90px;
     .photo {
       margin-top: 40px;
       .mob-w{
@@ -1484,7 +1496,7 @@
           animation-delay: 0.5s;
         }
         .toggle-text-inner{
-          max-height: 272px;
+          max-height: 277px;
           overflow: hidden;
           transition: all 1s;
           p{
@@ -1507,7 +1519,7 @@
           }
         }
         .toggle-text-inner{
-          max-height: 158px;
+          max-height: 165px;
           overflow: hidden;
           transition: all 1s;
           p{
@@ -1574,7 +1586,7 @@
           animation-delay: 3.5s;
         }
         .toggle-text-inner{
-          max-height: 158px;
+          max-height: 165px;
           overflow: hidden;
           transition: all 1s;
           p{
@@ -1632,14 +1644,14 @@
         h4{
           color: #282828;
           font-size: 22px;
-          font-weight: 400;
-          margin: 42px 0 18px;
+          font-weight: 600;
+          margin: 20px 0 18px;
           text-align: center;
           animation-delay: 0.7s;
         }
       }
       .col-left {
-        margin-top: 18px;
+        margin-top: 10px;
         .btn-black{
           width: 100%;
           margin: 30px 0;
@@ -1651,11 +1663,11 @@
           }
         }
         .toggle-text-inner{
-          max-height: 87px;
+          max-height: 98px;
           overflow: hidden;
           transition: all 1s;
           p{
-            margin-top: 19px;
+            margin-top: 10px;
             font-size: 15px;
             margin-bottom: 17px;
             width: 100%;
@@ -1729,7 +1741,7 @@
   .preimushestvo-main{
     .preimushestvo-rabot{
       background-position-x: center;
-      padding-top: 40px;
+      padding-top: 25px;
       .control,
       .location,
       .logistika,
@@ -1739,9 +1751,10 @@
         }
         p{
           font-size: 13px;
+          margin-left: 0;
         }
         .toggle-text-inner{
-          max-height: 158px;
+          max-height: 176px;
           overflow: hidden;
           transition: all 1s;
           p{
@@ -1755,7 +1768,7 @@
         }
       }
       .location{
-        margin-top: 50px;
+        margin-top: 20px;
         img.map{
           width: 100%;
         }
@@ -2260,7 +2273,7 @@
             max-height: unset !important;
             .nav-link{
               .kind-catalog{
-                margin-bottom: 45px;
+                margin-bottom: 20px;
                 flex-wrap: wrap; 
                 img{
                   max-width: 100%;
@@ -2398,7 +2411,7 @@
     }
     .info-tovar{
       .col-left .vkus-sca img {
-        width: 90%;
+        width: 95%;
       }
       .fasovka{
         .meshok{

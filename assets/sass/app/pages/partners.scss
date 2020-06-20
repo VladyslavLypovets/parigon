@@ -24,6 +24,9 @@
     padding-bottom: 250px;
     background: url(../img/bg-partners.png);
     background-size: cover;
+    @media (max-width: 1199px){
+      background-position-x: 70%;
+    }
     .partner-line {
       position: absolute;
       z-index: 1;
@@ -63,6 +66,7 @@
         line-height: 24px;
         animation-delay: 1.5s;
         width: 85%;
+        margin: 0;
         span{
           font-weight: 600;
         }
@@ -100,6 +104,9 @@
         width: 540px;
         @media (max-width: 1499px){
           width: unset;
+        }
+        @media (max-width: 1199px){
+          bottom: -120px;
         }
         h6{
           color: #e3b079;
