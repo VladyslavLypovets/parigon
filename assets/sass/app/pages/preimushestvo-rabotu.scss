@@ -232,6 +232,8 @@
       margin-top: 100px;
       img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       h4{
         margin-left: 10px;
@@ -272,5 +274,15 @@
     @media (max-width: 1199px){
       padding-top: 30px;
     }
+  }
+}
+#control-1 {
+  svg:nth-child(2) {
+    display: none;
+  }
+}
+#map {
+  @media(max-width: 767px) {
+    min-height: 350px;
   }
 }

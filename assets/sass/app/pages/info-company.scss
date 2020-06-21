@@ -14,6 +14,9 @@
     padding-bottom: 140px;
     background-position-y: bottom;
     position: relative;
+    @media(max-width: 1199px) {
+      padding-bottom: 40px;
+    }
     .info-lines {
       position: absolute;
       z-index: 1;
@@ -21,6 +24,9 @@
       top: 0;
       height: 100%;
       width: 100%;
+      @media(max-width: 767px) {
+        display: none;
+      }
     }
     .informaton-inner {
       position: relative;
@@ -35,6 +41,10 @@
         max-width: 50%;
         animation-delay: 0.5s;
         margin-bottom: 10px;
+        @media(max-width: 1199px) {
+          margin-right: 30px;
+          max-width: 55%;
+        }
       }
       h4{
         color: #24222d;
@@ -61,6 +71,11 @@
         font-weight: 400;
         line-height: 24px;
         margin-bottom: 25px;
+        
+        @media(max-width: 1199px) {
+          font-size: 15px;
+          line-height: 22px;
+        }
       }
       .toggle-text{
         animation-delay: 1.5s;
@@ -168,6 +183,10 @@
             bottom: 0;
             width: 95%;
           }
+            @media(max-width: 1199px) {
+              margin-left: 35px;
+              max-width: 55%;
+            }
         }
       }
       .owl-nav{

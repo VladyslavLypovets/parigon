@@ -28,7 +28,6 @@ $(document).ready(function() {
     }
 
     $('.nice-select').niceSelect();
-
     $('.consulstva .owl-carousel').owlCarousel({
         loop: true,
         // autoplay: true,
@@ -62,7 +61,6 @@ $(document).ready(function() {
                 '<i class="fa fa-angle-right" aria-hidden="true"></i>'
             ],
             items: 1,
-            margin: 10,
         });
     } 
     
@@ -240,6 +238,14 @@ $(document).ready(function() {
     setTimeout(function() {
         if (window.lottie) {
             lottie.loadAnimation(params);
+        }
+        if ($('#line svg').length) {
+            setViewBox();
+            window.addEventListener('resize', setViewBox);
+        }
+        if ($('#catalog-lines svg').length) {
+            setViewBoxCatalog();
+            window.addEventListener('resize', setViewBoxCatalog);
         }
     }, 2000);
 })

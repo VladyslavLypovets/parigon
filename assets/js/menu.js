@@ -17,6 +17,7 @@ $(document).ready(function(e) {
 
 function openMenu () {
   $('.main-menu').addClass('open');
+  $('body').addClass('scroll-disabled');
   setTimeout(function() {
     $('.triangle').addClass('open');
   }, 0);
@@ -27,6 +28,7 @@ function openMenu () {
 
 function closeMenu () {
   $('.main-menu').removeClass('animate');
+  $('body').removeClass('scroll-disabled');
   setTimeout(function() {
     $('.triangle').removeClass('open');
     setTimeout(function() {
