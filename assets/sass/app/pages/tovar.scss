@@ -47,6 +47,9 @@
     }
     .photo-tovar{
       margin-top: -60px;
+      @media (max-width: 993px){
+        margin-top: -35px;
+      }
       img{
         width: 100%;
         height: 100%;
@@ -57,6 +60,9 @@
     }
     .col-left {
       margin-top: -60px;
+      @media (max-width: 993px){
+        margin-top: -35px;
+      }
       h4{
         color: #ffffff;
         font-size: 36px;
@@ -71,6 +77,9 @@
           font-size: 16px;
           font-weight: 400;
           margin: 0 0 55px;
+          @media (max-width: 993px){
+            margin-bottom: 45px;
+          }
         }
         .toggle-text{
           animation-delay: 2s;
@@ -81,6 +90,9 @@
           font-weight: 600;
           margin-bottom: 25px;
           animation-delay: 2.5s;
+          @media (max-width: 993px){
+            margin-bottom: 17px;
+          }
         }
         .coffemachine{
           animation-delay: 3s;
@@ -116,6 +128,15 @@
             text-transform: uppercase;
             margin: 15px 0 0;
             animation-delay: 4.5s;
+          }
+          @media (max-width: 993px){
+            margin-top: 25px;
+            h5{
+              margin: 10px 0 0;
+            }
+            p{
+              line-height: 1;
+            }
           }
         }
       }
