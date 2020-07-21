@@ -5,6 +5,10 @@
   width: 100%;
   overflow: hidden;
   padding-bottom: 55px;
+
+  @media(max-width: 767px) {
+    background: #24222d;
+  }
   
   .map{
     width: 100%;
