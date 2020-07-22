@@ -198,8 +198,8 @@
               top: 50%;
               left: 50%;
               z-index: -1;
-              transform: translate(-50% -50%);
-              transition: all 0.5s linear;
+              transform: translate(-50%, -50%);
+              animation: 3s linear rotate infinite;
             }
             .number{
               color: #e3b079;

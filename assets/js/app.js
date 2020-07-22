@@ -232,7 +232,7 @@ $(document).ready(function() {
                 }
             })
         };
-        setInterval(rotate, 500);
+        // setInterval(rotate, 500);
     }
 
 
