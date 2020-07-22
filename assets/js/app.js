@@ -225,13 +225,14 @@ $(document).ready(function() {
         })
         function rotate() {
             $('.bg-stages .text').each(function(index, item) {
+                var self = this;
                 if (!hovers[index]) {
-                        angles[index] += 35;
+                    angles[index] += 50;
                     $(item).css('transform', 'translate(-50%, -50%) rotate(' + angles[index] + 'deg)')
                 }
             })
         };
-        setInterval(rotate, 300);
+        setInterval(rotate, 500);
     }
 
 
