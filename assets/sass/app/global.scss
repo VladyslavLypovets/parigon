@@ -43,3 +43,82 @@ a:hover {
 .transition-unset{
   transition: unset !important;
 }
+
+#catalog-lines{
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
+#catalog-lines path {
+  stroke: #e3b079;
+}
+
+#line {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+}
+
+#preimushestvo-line{
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
+#preimushestvo-line path {
+  stroke: #e3b079;
+}
+
+#tovar-line{
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
+#tovar-line path {
+  stroke: #e3b079;
+}
+
+#company-line{
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+
+#company-line path {
+  stroke: #e3b079;
+}
+
+#partner-animation{
+  width:100%;
+  height:100%;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
+#partner-animation path {
+  stroke: #e3b079;
+}

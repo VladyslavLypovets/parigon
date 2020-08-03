@@ -20,6 +20,12 @@
     opacity: 0.5;
     pointer-events: none;
   }
+  path {
+    stroke: rgb(151,102,100);
+  }
+  .top {
+    background: rgb(151,102,100);
+  }
   .bg-anim {
     position: absolute;
     z-index: 0;
