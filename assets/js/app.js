@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    setTimeout(function () {
+        $('body').removeClass('d-none');
+    }, 10)
     new WOW().init();
 
     window.goToPage = function (href) {
